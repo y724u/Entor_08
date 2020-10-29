@@ -1,1 +1,60 @@
-null
+/*================================================================
+footer
+================================================================*/
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+.footer__container {
+  display: flex;
+  width: 1018px;
+  margin: 120px auto 0 auto;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-bottom: 18px;
+}
+
+.footer__address {
+  margin-bottom: 16px;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__about {
+  border-right: 1px solid #222222;
+}
+
+.footer__about a {
+  display: block;
+  width: 100%;
+  padding-right: 16px;
+}
+
+.footer__company {
+  border-right: 1px solid #222222;
+}
+
+.footer__company a {
+  display: block;
+  width: 100%;
+  padding: 0 16px 0 16px;
+}
+
+.footer__service {
+  border-right: 1px solid #222222;
+}
+
+.footer__service a {
+  display: block;
+  width: 100%;
+  padding: 0 16px 0 16px;
+}
+
+.footer__download a {
+  padding-left: 16px;
+}

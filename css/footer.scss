@@ -1,1 +1,85 @@
 @charset "UTF-8";
+/*================================================================
+footer
+================================================================*/
+.footer {
+  width: 100%;
+  height: auto;
+
+  &__container {
+    display: flex;
+    width: 1018px;
+    margin: 120px auto 0 auto;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-bottom: 18px;
+  }
+
+  &__address {
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__about {
+    border-right: 1px solid #222222;
+
+    a {
+      display: block;
+      width: 100%;
+      padding-right: 16px;
+
+      &:hover {
+        opacity: $hover_opacity;
+      }
+    }
+  }
+
+  &__company {
+    border-right: 1px solid #222222;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 0 16px 0 16px;
+
+      &:hover {
+        opacity: $hover_opacity;
+      }
+    }
+  }
+
+  &__service {
+    border-right: 1px solid #222222;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 0 16px 0 16px;
+
+      &:hover {
+        opacity: $hover_opacity;
+      }
+    }
+  }
+
+  &__download {
+    a {
+      padding-left: 16px;
+
+      &:hover {
+        opacity: $hover_opacity;
+      }
+    }
+  }
+
+  &__copyright {
+    font-weight: bold;
+    text-align: center;
+    margin: 54px 0 40px 0; 
+  }
+}
