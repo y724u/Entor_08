@@ -1,1 +1,60 @@
 @charset "UTF-8";
+
+/*================================================================
+company
+================================================================*/
+.company {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  position: relative;
+
+  &__background {
+    background-image: url(../images/COMPANY.png);
+    position: absolute;
+    width: 720px;
+    height: 140px;
+    top: -2%;
+    left: 50%;
+    z-index: -1;
+  }
+
+  &__box {
+    background-image: url(../images/COMPANY_box.png);
+    width: 402px;
+    height: 390px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: -1;
+  }
+
+  &__container {
+    width: $container_width;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding-bottom: 100px;
+    display: flex;
+  }
+
+  &__left {
+    margin-right: 100px;
+  }
+
+  &__right {
+    margin-top: 100px;
+  }
+
+  &__title {
+    color: $font-color2;
+    font-size: $section-font-size;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  &__descriptions {
+    color: $font-color2;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
