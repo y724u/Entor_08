@@ -468,3 +468,63 @@ template {
 [hidden] {
   display: none;
 }
+
+.top {
+  background-image: url(../images/top.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.top__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 1242px;
+  height: 42px;
+  margin: 0 auto;
+  padding-top: 52px;
+}
+
+.top__logo img {
+  width: 205px;
+  height: 42px;
+}
+
+.top__lists {
+  display: flex;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.top__item1 {
+  margin-right: 38px;
+}
+
+.top__item2 {
+  margin-right: 33px;
+}
+
+.top__item3 {
+  margin-right: 33px;
+}
+
+.top__box {
+  color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 190px;
+}
+
+.top__title {
+  color: #FFFFFF;
+  font-size: 110px;
+  font-weight: bold;
+}
+
+.top__subtitle {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 32px;
+}
