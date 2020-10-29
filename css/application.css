@@ -689,3 +689,68 @@ contact
 .contact__inner:hover {
   opacity: 0.7;
 }
+
+/*================================================================
+service
+================================================================*/
+.service {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.service__background {
+  background-image: url(../images/SERVICE.png);
+  position: absolute;
+  width: 720px;
+  height: 140px;
+  top: -18%;
+  left: 20%;
+  z-index: -1;
+}
+
+.service__container {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 329px;
+}
+
+.service__title {
+  color: #222222;
+  font-size: 52px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.service__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__image {
+  overflow: hidden;
+}
+
+.service__image img {
+  width: 100%;
+  transition-duration: 0.8s;
+}
+
+.service__image img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+  opacity: 0.7;
+}
+
+.service__content {
+  color: #222222;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0 6px 0;
+}
+
+.service__details {
+  font-size: 16px;
+}
