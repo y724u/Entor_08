@@ -803,6 +803,45 @@ download
   margin-bottom: 50px;
 }
 
+.download input[type="checkbox"] {
+  display: none;
+}
+
+.download input[type="checkbox"]:checked + .download__label::before {
+  background: #1DBFCD url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.74999%208.14995L1.59999%204.99995L0.549988%206.04995L4.74999%2010.25L13.75%201.24995L12.7%200.199951L4.74999%208.14995Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E") no-repeat 5px center;
+}
+
+.download__label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px 40px;
+  position: relative;
+  width: auto;
+}
+
+.download__label:before {
+  border: 1px solid #1DBFCD;
+  background-color: #ffffff;
+  border-radius: 4px;
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  top: 50%;
+  left: 5px;
+  margin-top: -12.5px;
+  position: absolute;
+}
+
+.download__label a {
+  color: #1D85CD;
+  text-decoration: underline solid #1D85CD;
+}
+
+.download__label span {
+  cursor: default;
+}
+
 .download__button {
   color: #FFFFFF;
   background-color: #1d85cd;
