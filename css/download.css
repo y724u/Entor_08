@@ -1,1 +1,18 @@
-null
+/*================================================================
+download
+================================================================*/
+.download {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.download__background {
+  background-image: url(../images/DOWNLOAD.png);
+  position: absolute;
+  width: 720px;
+  height: 140px;
+  top: -18%;
+  left: 20%;
+  z-index: -1;
+}
