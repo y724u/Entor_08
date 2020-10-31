@@ -2,10 +2,10 @@
 
 /*================================================================
 top
-================================================================*/ 
+================================================================*/
 
 .top {
-  background-image: url(../images/top.png) ;
+  background-image: url(../images/top.png);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -63,5 +63,71 @@ top
     font-size: 32px;
     font-weight: bold;
     margin-top: 32px;
+  }
+}
+
+/*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .top {
+    &__menu {
+      display: block;
+      width: 700px;
+    }
+
+    &__box {
+      padding: 500px 0 0 34px;
+    }
+
+    &__logo {
+      img {
+        width: 205px;
+        height: 35px;
+      }
+    }
+
+    &__title {
+      font-size: 94px;
+    }
+
+    &__subtitle {
+      font-size: 32px;
+    }
+  }
+}
+/*================================================================
+スマホ対応
+================================================================*/
+@media only screen and (max-width: 767px) {
+  .top {
+    &__menu {
+      display: block;
+      width: 303px;
+      padding-top: 26px;
+    }
+
+    &__box {
+      padding: 380px 0 0 25px;
+    }
+
+    &__logo {
+      img {
+        width: 147px;
+        height: 28px;
+      }
+    }
+
+    &__nuv {
+      display: none;
+    }
+
+    &__title {
+      font-size: 47px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
   }
 }

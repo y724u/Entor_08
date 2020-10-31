@@ -53,3 +53,49 @@ about
     line-height: 32px;
   }
 }
+
+/*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+
+    &__container {
+      flex-direction: column;
+      width: 700px;
+    }
+
+    &__left {
+      order: 2;
+      position: relative;
+    }
+
+    &__title {
+      position: absolute;
+      top: -600px;
+    }
+
+    &__right {
+      order: 1;
+    }
+  }
+
+}
+/*================================================================
+スマホ対応
+================================================================*/
+@media only screen and (max-width: 767px) {
+.about {
+
+  &__container {
+    width: $container_width;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding-bottom: 100px;
+    display: block;
+    flex-direction: column;
+  }
+}
+
+
+}
