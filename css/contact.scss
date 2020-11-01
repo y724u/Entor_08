@@ -29,7 +29,7 @@ contact
     border-radius: 8px;
     margin: 0 auto;
     margin-top: 68px;
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2213%22%20height%3D%2220%22%20viewBox%3D%220%200%2013%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0.880005%202.12L8.76%2010L0.880005%2017.88L3%2020L13%2010L3%200L0.880005%202.12Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E');
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2213%22%20height%3D%2220%22%20viewBox%3D%220%200%2013%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0.880005%202.12L8.76%2010L0.880005%2017.88L3%2020L13%2010L3%200L0.880005%202.12Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
     background-position: 422px 30px;
   }
@@ -44,54 +44,46 @@ contact
     font-size: 22px;
     text-align: center;
     line-height: 80px;
-    
+
     &:hover {
       opacity: $hover_opacity;
     }
   }
 }
-
-
 /*================================================================
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
+  .contact {
+    height: 375px;
+    background-image: url(../images/contact_sp.png);
+    background-size: contain;
 
-.contact {
-  
-  height: 375px;
-  background-image: url(../images/contact_sp.png);
-  background-size: contain;
+    &__tittle {
+      width: 328px;
+      margin: 0 auto;
+      font-size: 18px;
+      padding-top: 90px;
+      line-height: 30px;
 
+      &--br {
+        display: block;
+      }
+    }
 
-&__tittle {
-  width: 328px;
-  margin: 0 auto;
-  font-size: 18px;
-  padding-top: 90px;
-  line-height: 30px;
+    &__button {
+      background-position: 300px 17px;
+      width: 328px;
+      height: 58px;
+    }
 
-  &--br {
-    display: block;
+    &__inner {
+      line-height: 58px;
+      font-size: 18px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
-}
-
-&__button {
-  background-position: 300px 17px;
-  width: 328px;
-  height: 58px;
-}
-
-&__inner {
-  line-height: 58px;
-  font-size: 18px;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
-}
-
- 
 }
