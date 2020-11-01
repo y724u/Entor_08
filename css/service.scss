@@ -53,12 +53,6 @@ service
     }
   }
 
-  &__item {
-    overflow-x: auto;  
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-
   &__content {
     color: $font-color2;
     font-size: 24px;
@@ -95,12 +89,13 @@ service
   }
 
   &__cards {
-    display: flex;
     justify-content: space-evenly;
+      overflow-x: scroll;  
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
   }
-
-  &__image {
-    
+    &__item {
+      display: inline-block;
+    }
   }
-}
 }
