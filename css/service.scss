@@ -68,34 +68,31 @@ service
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
-.service {
-  &__background {
-    background-size: contain;
-    width: 210px;
-    height: 40px;
-    top: -10%;
-    left: 5%;
-  }
+  .service {
+    &__background {
+      background-size: contain;
+      width: 210px;
+      height: 40px;
+      top: -10%;
+      left: 5%;
+    }
 
-  &__container {
-    margin-top: 100px;
-  }
+    &__container {
+      margin-top: 100px;
+    }
 
-  &__title {
-    margin-bottom: 30px;
-    text-align: left;
-    font-size: 24px;
-    padding-left: 150px;
-  }
+    &__title {
+      margin-bottom: 30px;
+      text-align: left;
+      font-size: 24px;
+      padding-left: 150px;
+    }
 
-  &__cards {
-    justify-content: space-evenly;
-      overflow-x: scroll;  
+    &__cards {
+      justify-content: space-evenly;
+      overflow-x: auto;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
-  }
-    &__item {
-      display: inline-block;
     }
   }
 }
