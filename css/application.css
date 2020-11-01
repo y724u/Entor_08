@@ -837,6 +837,10 @@ contact
   padding-top: 97px;
 }
 
+.contact__tittle--br {
+  display: none;
+}
+
 .contact__button {
   width: 460px;
   height: 80px;
@@ -853,6 +857,7 @@ contact
   background: rgba(255, 255, 255, 0.25);
   color: #FFFFFF;
   display: block;
+  font-weight: bold;
   width: 100%;
   height: 100%;
   font-size: 22px;
@@ -865,31 +870,35 @@ contact
 }
 
 /*================================================================
-タブレット対応
-================================================================*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /*================================================================
-common
-================================================================*/
-  body .container {
-    width: 650px;
-    margin: auto;
-  }
-  /*================================================================
-header
-================================================================*/
-}
-
-/*================================================================
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
-  /*================================================================
-common
-================================================================*/
-  body .container {
-    width: 327px;
-    margin: auto;
+  .contact {
+    height: 375px;
+    background-image: url(../images/contact_sp.png);
+    background-size: contain;
+  }
+  .contact__tittle {
+    width: 328px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding-top: 90px;
+    line-height: 30px;
+  }
+  .contact__tittle--br {
+    display: block;
+  }
+  .contact__button {
+    background-position: 300px 17px;
+    width: 328px;
+    height: 58px;
+  }
+  .contact__inner {
+    line-height: 58px;
+    font-size: 18px;
+  }
+  .contact__inner:hover {
+    opacity: 1;
   }
 }
 

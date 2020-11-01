@@ -16,6 +16,10 @@ contact
     font-weight: bold;
     text-align: center;
     padding-top: 97px;
+
+    &--br {
+      display: none;
+    }
   }
 
   &__button {
@@ -34,6 +38,7 @@ contact
     background: rgba(255, 255, 255, 0.25);
     color: $font-color1;
     display: block;
+    font-weight: bold;
     width: 100%;
     height: 100%;
     font-size: 22px;
@@ -51,8 +56,42 @@ contact
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
+
+.contact {
   
-.contact
+  height: 375px;
+  background-image: url(../images/contact_sp.png);
+  background-size: contain;
+
+
+&__tittle {
+  width: 328px;
+  margin: 0 auto;
+  font-size: 18px;
+  padding-top: 90px;
+  line-height: 30px;
+
+  &--br {
+    display: block;
+  }
+}
+
+&__button {
+  background-position: 300px 17px;
+  width: 328px;
+  height: 58px;
+}
+
+&__inner {
+  line-height: 58px;
+  font-size: 18px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+}
 
  
 }
