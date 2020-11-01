@@ -694,7 +694,8 @@ about
   .about__title {
     position: absolute;
     top: -300px;
-    left: 80px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 24px;
     width: 180px;
   }
@@ -755,6 +756,10 @@ company
   margin-right: 100px;
 }
 
+.company__left--sp {
+  display: none;
+}
+
 .company__right {
   margin-top: 100px;
 }
@@ -773,31 +778,44 @@ company
 }
 
 /*================================================================
-タブレット対応
-================================================================*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /*================================================================
-common
-================================================================*/
-  body .container {
-    width: 650px;
-    margin: auto;
-  }
-  /*================================================================
-header
-================================================================*/
-}
-
-/*================================================================
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
-  /*================================================================
-common
-================================================================*/
-  body .container {
+  .company__background {
+    background-size: contain;
+    width: 223px;
+    height: 45px;
+    top: -10%;
+    left: 40%;
+  }
+  .company__box {
+    width: 332px;
+    height: 160px;
+    position: absolute;
+    top: 7%;
+    left: -20%;
+    z-index: -1;
+  }
+  .company__container {
     width: 327px;
-    margin: auto;
+    flex-direction: column;
+  }
+  .company__left--pc {
+    display: none;
+  }
+  .company__left--sp {
+    display: block;
+  }
+  .company__right {
+    position: relative;
+  }
+  .company__title {
+    position: absolute;
+    top: -320px;
+    left: 50%;
+    transform: translateX(-25%);
+    font-size: 24px;
+    width: 180px;
   }
 }
 
