@@ -92,14 +92,22 @@ footer
 
   &__container {
     display: block;
+    width: 300px;
     margin: 100px 0 0 26px;
   }
 
   &__left {
     margin-bottom: 40px;
+
+    ul {
+      li {
+        width: 300px;
+      }
+    }
   }
 
   &__right {
+    width: 250px;
     margin-bottom: 90px;
   }
 
@@ -107,6 +115,7 @@ footer
     display: block;
 
     li {
+      border-right: none;
       margin-bottom: 16px;
 
       a {
@@ -119,10 +128,6 @@ footer
     margin-bottom: 24px;
   }
 
-
-
-
-}
-
   
   }
+}

@@ -1078,6 +1078,9 @@ body.fixed {
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
+  .service {
+    width: 375px;
+  }
   .service__background {
     background-size: contain;
     width: 210px;
@@ -1095,15 +1098,13 @@ body.fixed {
     padding-left: 150px;
   }
   .service__cards {
-    width: 327px;
+    width: 90%;
+    margin: 0 auto;
     padding: 0;
     justify-content: space-evenly;
     overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-  }
-  .service__service__item {
-    width: 90%;
   }
 }
 
@@ -1436,18 +1437,24 @@ footer
 @media only screen and (max-width: 767px) {
   .footer__container {
     display: block;
+    width: 300px;
     margin: 100px 0 0 26px;
   }
   .footer__left {
     margin-bottom: 40px;
   }
+  .footer__left ul li {
+    width: 300px;
+  }
   .footer__right {
+    width: 250px;
     margin-bottom: 90px;
   }
   .footer__list {
     display: block;
   }
   .footer__list li {
+    border-right: none;
     margin-bottom: 16px;
   }
   .footer__list li a {
