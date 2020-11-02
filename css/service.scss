@@ -192,7 +192,7 @@ margin-bottom: 24px;
 
     &__container {
       margin-top: 100px;
-      width: 327px;
+      
     }
 
     &__title {
@@ -203,13 +203,17 @@ margin-bottom: 24px;
     }
 
     &__cards {
-      width: 90%;
-      margin: 0 auto;
+      width: 327px;
+      // margin: 0 auto;
       padding: 0;
       justify-content: space-evenly;
       overflow-x: scroll;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
+    }
+
+    &__service__item {
+      width: 90%;
     }
   }
 }

@@ -1087,7 +1087,6 @@ body.fixed {
   }
   .service__container {
     margin-top: 100px;
-    width: 327px;
   }
   .service__title {
     margin-bottom: 30px;
@@ -1096,13 +1095,15 @@ body.fixed {
     padding-left: 150px;
   }
   .service__cards {
-    width: 90%;
-    margin: 0 auto;
+    width: 327px;
     padding: 0;
     justify-content: space-evenly;
     overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+  }
+  .service__service__item {
+    width: 90%;
   }
 }
 
