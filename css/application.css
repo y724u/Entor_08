@@ -967,6 +967,86 @@ service
   font-size: 16px;
 }
 
+.service__item--modal {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.service__item--modal.show_modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.service__item--bg {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+}
+
+.service__item--content {
+  height: 50%;
+  overflow-y: scroll;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  background-color: #ffffff;
+}
+
+.service__item--header {
+  display: flex;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.service__item--header img {
+  cursor: pointer;
+}
+
+.service__item--title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 350px;
+}
+
+.service__item--description {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.service__item--inner h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.service__item--inner ul {
+  margin-bottom: 24px;
+}
+
+.service__item--inner ul li {
+  margin-bottom: 8px;
+}
+
+.service__item--development h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.service__item--development p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
 /*================================================================
 スマホ対応
 ================================================================*/

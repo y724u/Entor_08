@@ -97,19 +97,50 @@ contact
 service
 ================================================================*/ -->
   <section class="service" id="service">
+    <div class="service__item--modal">
+      <div class="service__item--bg js-modalClose"></div>
+      <div class="service__item--content">
+        <div class="service__item--header">
+          <div class="service__item--box"></div>
+          <h1 class="service__item--title">システム開発</h1>
+          <img src="./images/close.svg" alt="閉じるボタン" class="js-modalClose">
+        </div>
+        <p class="service__item--description">
+          私たちは、幅広い分野における開発を行っております。デザインから開発までワンストップで対応しております。
+        </p>
+        <div class="service__item--inner">
+          <h2>対応内容</h2>
+          <ul>
+            <li>・Webサイト制作</li>
+            <li>・Webシステム開発 </li>
+            <li>・Webデザイン制作 </li>
+            <li>・ロゴ/バナー制作 </li>
+            <li>・スマホアプリ開発</li>
+            <li>・IoTデバイス開発</li>
+          </ul>
+        </div>
+        <div class="service__item--development">
+          <h2>自社開発</h2>
+          <p>家の外から子供の様子を確認できる「まもるくん」の開発を行っております。2001年にリリースをし、多くのご家族に愛用して頂いております。</p>
+        </div>
+      </div>
+    </div>
     <div class="service__background"></div>
     <div class="service__container">
       <h2 class="service__title">事業内容</h2>
 
       <div class="service__cards">
 
-        <div class="service__item">
+        <div class="service__item js-modalOpen">
           <div class="service__image"><img src="./images/service_1.png" alt="システム開発"></div>
           <dl>
             <dt class="service__content">システム開発</dt>
             <dd class="service__details">Webサイト制作・アプリ開発・IoT開発</dd>
           </dl>
         </div>
+
+
+
 
         <div class="service_item">
           <div class="service__image"><img src="./images/service_2.png" alt="地方創生"></div>
