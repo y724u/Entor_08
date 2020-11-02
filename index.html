@@ -19,7 +19,8 @@
   <!-- title -->
   <title>ENTOR株式会社</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-<meta name="description" content="ENTOR株式会社では、IT技術で新しいソリューションの開発を行い、皆様の生活を快適にすることを目指し、開発を行っております。Web制作からスマホアプリ開発、IoTデバイスの開発など幅広く開発をしております。">
+  <meta name="description"
+    content="ENTOR株式会社では、IT技術で新しいソリューションの開発を行い、皆様の生活を快適にすることを目指し、開発を行っております。Web制作からスマホアプリ開発、IoTデバイスの開発など幅広く開発をしております。">
   <meta name=”keywords” content=”ENTOR,IT,WEB開発,地方創生,人材育成”>
   <!-- css -->
   <link rel="stylesheet" href="./css/application.min.css">
@@ -97,6 +98,7 @@ contact
 service
 ================================================================*/ -->
   <section class="service" id="service">
+
     <div class="service__item--modal">
       <div class="service__item--bg js-modalClose"></div>
       <div class="service__item--content">
@@ -125,6 +127,40 @@ service
         </div>
       </div>
     </div>
+
+    <!-- 
+    <div class="service__item--modal">
+      <div class="service__item--bg js-modalClose"></div>
+      <div class="service__item--content">
+        <div class="service__item--header">
+          <div class="service__item--box"></div>
+          <h1 class="service__item--title">地方創生</h1>
+          <img src="./images/close.svg" alt="閉じるボタン" class="js-modalClose">
+        </div>
+        <p class="service__item--description">
+          空き家の活用や地域コミュニティの活性化、イベント開催などを行っております。
+        </p>
+        <div class="service__item--inner">
+          <h2>対応地域</h2>
+          <ul>
+            <li>・北海道網走市</li>
+            <li>・岩手県遠野市 </li>
+            <li>・栃木県那須烏山市 </li>
+            <li>・富山県砺波市・南砺市</li>
+          </ul>
+        </div>
+        <div class="service__item--development">
+          <h2>イベント実績</h2>
+          <ul>
+            <li>・2001年01月　私たちのまちの野菜で料理教室 </li>
+            <li>・2004年08月　守ろう、みんなで川掃除</li>
+            <li>・2012年03月　古民家活用制作会議 </li>
+            <li>・2016年12月　クラウド活用した森林資源</li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
     <div class="service__background"></div>
     <div class="service__container">
       <h2 class="service__title">事業内容</h2>
@@ -139,10 +175,7 @@ service
           </dl>
         </div>
 
-
-
-
-        <div class="service_item">
+        <div class="service_item js-modalOpen">
           <div class="service__image"><img src="./images/service_2.png" alt="地方創生"></div>
           <dl>
             <dt class="service__content">地方創生</dt>
@@ -150,7 +183,7 @@ service
           </dl>
         </div>
 
-        <div class="service_item">
+        <div class="service_item js-modalOpen">
           <div class="service__image"><img src="./images/service_3.png" alt="人材育成"></div>
           <dl>
             <dt class="service__content">人材育成</dt>
@@ -165,6 +198,44 @@ service
 download
 ================================================================*/ -->
   <section class="download" id="download">
+
+    <div class="download__policy--modal">
+      <div class="download__policy--bg js-modalClose-download"></div>
+      <div class="download__policy--content"> 
+        <div class="download__policy--header">
+          <div class="download__policy--box"></div>
+          <h1 class="download__policy--title">利用規約</h1>
+          <img src="./images/close.svg" alt="閉じるボタン" class="js-modalClose-download">
+        </div>
+        <p class="download__policy--description">
+          この利用規約（以下、「本規約」といいます。）は、ENTOR株式会社（以下，「当社」といいます。）がこのウェブサイト上で提供するサービス（以下，「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーの皆さま（以下，「ユーザー」といいます。）には，本規約に従って，本サービスをご利用いただきます。
+        </p>
+        <div class="download__policy--list">
+          <h2>第1条（適用）</h2>
+          <ul>
+            <li>1.　本規約は，ユーザーと当社との間の本サービスの利用に関わる一切の関係に適用されるものとします。</li>
+            <li>2.　当社は本サービスに関し，本規約のほか，ご利用にあたってのルール等，各種の定め（以下，「個別規定」といいます。）をすることがあります。これら個別規定はその名称のいかんに関わらず，本規約の一部を構成するものとします。 </li>
+            <li>3.　本規約の規定が前条の個別規定の規定と矛盾する場合には，個別規定において特段の定めなき限り，個別規定の規定が優先されるものとします。</li>
+          </ul>
+        </div>
+        <div class="download__policy--list">
+          <h2>第2条（利用登録）</h2>
+          <ul>
+            <li>1.　本サービスにおいては，登録希望者が本規約に同意の上，当社の定める方法によって利用登録を申請し，当社がこれを承認することによって，利用登録が完了するものとします。</li>
+            <li>2. 　当社は，利用登録の申請者に以下の事由があると判断した場合，利用登録の申請を承認しないことがあり，その理由については一切の開示義務を負わないものとします。</li>
+          </ul>
+        </div>
+        <div class="download__policy--list">
+          <h2>第3条（ユーザーIDおよびパスワードの管理）</h2>
+          <ul>
+            <li>1.　ユーザーは，自己の責任において，本サービスのユーザーIDおよびパスワードを適切に管理するものとします。</li>
+            <li>2.　ユーザーは，いかなる場合にも，ユーザーIDおよびパスワードを第三者に譲渡または貸与し，もしくは第三者と共用することはできません。当社は，ユーザーIDとパスワードの組み合わせが登録情報と一致してログインされた場合には，そのユーザーIDを登録しているユーザー自身による利用とみなします。</li>
+            <li>3.　ユーザーID及びパスワードが第三者によって使用されたことによって生じた損害は，当社に故意又は重大な過失がある場合を除き，当社は一切の責任を負わないものとします。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="download__background"></div>
     <h2 class="download__title">資料ダウンロード</h2>
     <div class="download__container">
@@ -175,48 +246,48 @@ download
           こちらの内容を確認していただいた上で、お問い合わせをして頂けると幸いです。
         </p>
         <div class="download__policy">
-          <input class="download__checkbox" type="checkbox" id="check" name="checkbox">
-          <label class="download__label" for="check"><a href="#">利用規約</a><span>に同意する</span></label>
+          <input class="download__checkbox" type="checkbox" id="check" name="checkbox" >
+          <label class="download__label" for="check"><a class="js-modalOpen-download">利用規約</a><span>に同意する</span></label>
         </div>
-        <div class="download__button"><a href="#">ダウンロード</a></div>
+        <div class="download__button"><a href="#" class="download__button--link">ダウンロード</a></div>
       </div>
     </div>
   </section>
-<!--*================================================================
+  <!--*================================================================
 contact
 ================================================================*/ -->
-<section class="contact">
-  <h2 class="contact__tittle">開発のご依頼やお見積もりなどお気軽にお問い合わせください</h2>
-  <div class="contact__button"><a class="contact__inner" href="#">お問い合わせはこちら</a></div>
-</section>
-<!--*================================================================
+  <section class="contact">
+    <h2 class="contact__tittle">開発のご依頼やお見積もりなどお気軽にお問い合わせください</h2>
+    <div class="contact__button"><a class="contact__inner" href="#">お問い合わせはこちら</a></div>
+  </section>
+  <!--*================================================================
 footer
 ================================================================*/ -->
-<section class="footer">
-  <div class="footer__container">
-    <div class="footer__left">
-      <ul>
-        <li class="footer__logo"><img src="./images/footer_logo.png" alt="Entor株式会社"></li>
-        <li class="footer__address">東京都新宿区エンター町 ENTOR203号</li>
-        <li class="footer__number">TEL：000(0000)0000</li>
-      </ul>
+  <section class="footer">
+    <div class="footer__container">
+      <div class="footer__left">
+        <ul>
+          <li class="footer__logo"><img src="./images/footer_logo.png" alt="Entor株式会社"></li>
+          <li class="footer__address">東京都新宿区エンター町 ENTOR203号</li>
+          <li class="footer__number">TEL：000(0000)0000</li>
+        </ul>
+      </div>
+      <div class="footer__right">
+        <ul class="footer__list">
+          <li class="footer__about"><a href="#about">私たちについて</a></li>
+          <li class="footer__company"><a href="#company">会社情報</a></li>
+          <li class="footer__service"><a href="#service">事業内容</a></li>
+          <li class="footer__download"><a href="#download">資料ダウンロード</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer__right">
-      <ul class="footer__list">
-        <li class="footer__about"><a href="#about">私たちについて</a></li>
-        <li class="footer__company"><a href="#company">会社情報</a></li>
-        <li class="footer__service"><a href="#service">事業内容</a></li>
-        <li class="footer__download"><a href="#download">資料ダウンロード</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="footer__copyright">©︎2020 ENTOR株式会社</p>
+    <p class="footer__copyright">©︎2020 ENTOR株式会社</p>
   </section>
   </div>
 
-<!-- jquery -->
+  <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- js -->  
+  <!-- js -->
   <script src="./script.js"></script>
 </body>
 

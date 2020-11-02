@@ -2,6 +2,7 @@
 /*================================================================
 download
 ================================================================*/
+
 .download {
   width: 100%;
   height: auto;
@@ -111,6 +112,92 @@ download
       line-height: 48px;
     }
   }
+
+  &__policy--modal {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  
+    &.show_modal {
+      opacity: 1;
+      visibility: visible;
+      z-index: 100;
+    }
+  }
+
+  &__policy--bg {
+    background: rgba(0, 0, 0, 0.45);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+  }
+
+    &__policy--content {
+      height: 50%;
+      overflow-y:scroll;
+      left: 50%;
+      padding: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 30%;
+      background-color: #ffffff;
+    }
+
+    &__policy--header {
+      display: flex;
+      position: relative;
+      margin-bottom: 32px;
+
+      img {
+        cursor: pointer;
+        padding-bottom: 5px;
+        position: absolute;
+        right: 3%;
+      }
+
+    } 
+
+    &__policy--box {
+      background: #1D85CD;
+      border-radius: 0px 4px 4px 0px;
+      position: absolute;
+      top: -8px;
+      left: -40px;
+      width: 17px;
+      height: 42px;
+    }
+
+    &__policy--title {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  
+    &__policy--description {
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
+
+    &__policy--list {
+      
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      li {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 24px;
+      }
+    } 
 }
 
 /*================================================================
