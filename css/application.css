@@ -1087,6 +1087,7 @@ body.fixed {
   }
   .service__container {
     margin-top: 100px;
+    width: 327px;
   }
   .service__title {
     margin-bottom: 30px;
@@ -1099,7 +1100,7 @@ body.fixed {
     margin: 0 auto;
     padding: 0;
     justify-content: space-evenly;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
