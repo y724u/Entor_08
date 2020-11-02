@@ -1102,7 +1102,7 @@ body.fixed {
     font-size: 24px;
   }
   .service__cards {
-    justify-content: space-evenly;
+    padding: 0;
     overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
