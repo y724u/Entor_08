@@ -48,23 +48,23 @@ download
 
   input[type="checkbox"] {
     display: none;
-  
+
     &:checked + .download__label::before {
-      background: #1DBFCD
+      background: #1dbfcd
         url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.74999%208.14995L1.59999%204.99995L0.549988%206.04995L4.74999%2010.25L13.75%201.24995L12.7%200.199951L4.74999%208.14995Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")
         no-repeat 5px center;
     }
   }
-  
+
   &__label {
     cursor: pointer;
     display: inline-block;
     padding: 15px 40px;
     position: relative;
     width: auto;
-  
+
     &:before {
-      border: 1px solid #1DBFCD;
+      border: 1px solid #1dbfcd;
       background-color: #ffffff;
       border-radius: 4px;
       content: "";
@@ -78,15 +78,15 @@ download
     }
 
     a {
-      color: #1D85CD;
-      text-decoration: underline solid #1D85CD;
+      color: #1d85cd;
+      text-decoration: underline solid #1d85cd;
     }
 
     span {
       cursor: default;
     }
   }
-  
+
   &__button {
     color: $font-color1;
     background-color: #1d85cd;
@@ -117,13 +117,9 @@ download
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
-
   .download {
-
-    
-
     &__background {
-      background-size: contain; 
+      background-size: contain;
       background-repeat: no-repeat;
       width: 223px;
       height: 150px;
@@ -148,7 +144,7 @@ download
       height: 277px;
       padding-left: 10px;
       margin: 0 auto;
-      
+
       img {
         width: 100%;
         height: 100%;
@@ -169,5 +165,5 @@ download
     &__button {
       margin: 0 auto;
     }
-}
+  }
 }

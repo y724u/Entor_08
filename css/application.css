@@ -1048,7 +1048,7 @@ download
 }
 
 .download input[type="checkbox"]:checked + .download__label::before {
-  background: #1DBFCD url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.74999%208.14995L1.59999%204.99995L0.549988%206.04995L4.74999%2010.25L13.75%201.24995L12.7%200.199951L4.74999%208.14995Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E") no-repeat 5px center;
+  background: #1dbfcd url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.74999%208.14995L1.59999%204.99995L0.549988%206.04995L4.74999%2010.25L13.75%201.24995L12.7%200.199951L4.74999%208.14995Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E") no-repeat 5px center;
 }
 
 .download__label {
@@ -1060,7 +1060,7 @@ download
 }
 
 .download__label:before {
-  border: 1px solid #1DBFCD;
+  border: 1px solid #1dbfcd;
   background-color: #ffffff;
   border-radius: 4px;
   content: "";
@@ -1074,8 +1074,8 @@ download
 }
 
 .download__label a {
-  color: #1D85CD;
-  text-decoration: underline solid #1D85CD;
+  color: #1d85cd;
+  text-decoration: underline solid #1d85cd;
 }
 
 .download__label span {
@@ -1237,30 +1237,29 @@ footer
 }
 
 /*================================================================
-タブレット対応
-================================================================*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /*================================================================
-common
-================================================================*/
-  body .container {
-    width: 650px;
-    margin: auto;
-  }
-  /*================================================================
-header
-================================================================*/
-}
-
-/*================================================================
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
-  /*================================================================
-common
-================================================================*/
-  body .container {
-    width: 327px;
-    margin: auto;
+  .footer__container {
+    display: block;
+    margin: 100px 0 0 26px;
+  }
+  .footer__left {
+    margin-bottom: 40px;
+  }
+  .footer__right {
+    margin-bottom: 90px;
+  }
+  .footer__list {
+    display: block;
+  }
+  .footer__list li {
+    margin-bottom: 16px;
+  }
+  .footer__list li a {
+    padding-left: 0;
+  }
+  .footer__copyright {
+    margin-bottom: 24px;
   }
 }
