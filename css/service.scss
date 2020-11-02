@@ -203,6 +203,8 @@ margin-bottom: 24px;
 
     &__cards {
       width: 90%;
+      margin: 0 auto;
+      padding: 0;
       justify-content: space-evenly;
       overflow-x: auto;
       white-space: nowrap;
