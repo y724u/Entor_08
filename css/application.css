@@ -1095,6 +1095,7 @@ body.fixed {
     padding-left: 150px;
   }
   .service__cards {
+    width: 90%;
     justify-content: space-evenly;
     overflow-x: auto;
     white-space: nowrap;
