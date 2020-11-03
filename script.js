@@ -113,3 +113,11 @@ $(function() {
     $('.download__button--link').removeClass('box__checked');
   });
 });
+
+// <!-- ハンバーガーメニュー -->
+document.addEventListener("DOMContentLoaded", function() { 
+  document.getElementById("hamburger_menu").addEventListener("click", function() {this.classList.toggle("active");
+  document.getElementById("nav").classList.toggle("active");
+  })
+});
+
