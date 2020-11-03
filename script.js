@@ -141,18 +141,18 @@ $(function(){
   });
 });
 
-// <!-- ハンバーガーメニュー表示 -->
-if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-  jQuery(function($){
-    $(window).on('load scroll', function(){
-      if ($(window).scrollTop() > 300) {
-        $('#hamburger_menu').fadeOut(400);
-      } else {
-        $('#hamburger_menu').fadeIn(400);
-      }
+// // <!-- ハンバーガーメニュー表示 -->
+  if (window.matchMedia( "(max-width: 768px)" ).matches) {
+    jQuery(function($){
+      $(window).on('load scroll', function(){
+        if ($(window).scrollTop() > 300) {
+          $('#hamburger_menu').fadeOut(400);
+        } else {
+          $('#hamburger_menu').fadeIn(400);
+        }
+      });
     });
-  });
-  }
+    }
 
 
 
