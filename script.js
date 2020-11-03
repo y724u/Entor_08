@@ -11,13 +11,33 @@ $(function(){
   });
 });
 
-// <!-- サービスモーダル -->
+// <!-- サービスシステム開発モーダル -->
 $(function() {
   $('.js-modalOpen').on('click',function(){
     $('.service__item--modal').addClass('show_modal');
   });
   $('.js-modalClose').on('click',function(){
     $('.service__item--modal').removeClass('show_modal');
+  });
+});
+
+// <!-- サービス地方創生モーダル -->
+$(function() {
+  $('.js-modalOpen2').on('click',function(){
+    $('.service__item--modal2').addClass('show_modal2');
+  });
+  $('.js-modalClose').on('click',function(){
+    $('.service__item--modal2').removeClass('show_modal2');
+  });
+});
+
+// <!-- サービス人材育成モーダル -->
+$(function() {
+  $('.js-modalOpen3').on('click',function(){
+    $('.service__item--modal3').addClass('show_modal3');
+  });
+  $('.js-modalClose').on('click',function(){
+    $('.service__item--modal3').removeClass('show_modal3');
   });
 });
 
@@ -32,10 +52,36 @@ $(function() {
 });
 
 
-// <!-- 事業内容モーダルスクロールストップ -->
+// <!-- サービスシステム開発モーダルスクロールストップ -->
 $(function(){
 	var scrollPosition;
 	$(".js-modalOpen").on("click", function() {
+		scrollPosition = $(window).scrollTop();
+		$('body').addClass('fixed').css({'top': -scrollPosition});
+	});
+	$(".js-modalClose").on("click", function() {
+		$('body').removeClass('fixed').css({'top': 0});
+		window.scrollTo( 0 , scrollPosition );
+	});
+});
+
+// <!-- サービス地方創生モーダルスクロールストップ -->
+$(function(){
+	var scrollPosition;
+	$(".js-modalOpen2").on("click", function() {
+		scrollPosition = $(window).scrollTop();
+		$('body').addClass('fixed').css({'top': -scrollPosition});
+	});
+	$(".js-modalClose").on("click", function() {
+		$('body').removeClass('fixed').css({'top': 0});
+		window.scrollTo( 0 , scrollPosition );
+	});
+});
+
+// <!-- サービス人材育成モーダルスクロールストップ -->
+$(function(){
+	var scrollPosition;
+	$(".js-modalOpen3").on("click", function() {
 		scrollPosition = $(window).scrollTop();
 		$('body').addClass('fixed').css({'top': -scrollPosition});
 	});
@@ -58,22 +104,12 @@ $(function(){
 	});
 });
 
-
-
-// $(function() {
-//   $('#check').on('click',function(){
-//     $('.download__button--link').addClass('box__checked');
-//   });
-//   $('#check').on('click',function(){
-//     $('.download__button--link').removeClass('box__checked');
-//   });
-// });
-
+// <!-- 資料ダウンロード チェック判定 -->
 $(function() {
-  $('.js-active').on('click',function(){
+  $('input[name="checkbox"]').change(function() {
+    if ( $(this).is(':checked') )
     $('.download__button--link').addClass('box__checked');
-  });
-  $('.js-active').on('click',function(){
+    else
     $('.download__button--link').removeClass('box__checked');
   });
 });

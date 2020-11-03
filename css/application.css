@@ -993,6 +993,38 @@ body.fixed {
   z-index: 100;
 }
 
+.service__item--modal2 {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.service__item--modal2.show_modal2 {
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+}
+
+.service__item--modal3 {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.service__item--modal3.show_modal3 {
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+}
+
 .service__item--bg {
   background: rgba(0, 0, 0, 0.45);
   height: 100vh;

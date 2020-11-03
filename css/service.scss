@@ -86,6 +86,38 @@ body.fixed {
     }
   }
 
+  &__item--modal2 {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+    &.show_modal2 {
+      opacity: 1;
+      visibility: visible;
+      z-index: 100;
+    }
+  }
+
+  &__item--modal3 {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+    &.show_modal3 {
+      opacity: 1;
+      visibility: visible;
+      z-index: 100;
+    }
+  }
+
   &__item--bg {
     background: rgba(0, 0, 0, 0.45);
     height: 100vh;
