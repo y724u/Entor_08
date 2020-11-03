@@ -121,3 +121,22 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 });
 
+// <!-- ハンバーガーメニュースクールロールストップ -->
+$(function(){
+  var state = false;
+  var scrollpos;
+ 
+  $('.top__nuv--hamburger').on('click', function(){
+    if(state == false) {
+      scrollpos = $(window).scrollTop();
+      $('body').addClass('fixed').css({'top': -scrollpos});
+      $('#nav').addClass('open');
+      state = true;
+    } else {
+      $('body').removeClass('fixed').css({'top': 0});
+      window.scrollTo( 0 , scrollpos );
+      $('#nav').removeClass('open');
+      state = false;
+    }
+  });
+});
