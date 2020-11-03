@@ -956,7 +956,6 @@ body.fixed {
 }
 
 .service__image img {
-  width: 100%;
   transition-duration: 0.8s;
 }
 
@@ -1028,7 +1027,7 @@ body.fixed {
 }
 
 .service__item--box {
-  background: #1D85CD;
+  background: #1d85cd;
   border-radius: 0px 4px 4px 0px;
   position: absolute;
   top: -8px;
@@ -1102,10 +1101,13 @@ body.fixed {
     font-size: 24px;
   }
   .service__cards {
-    padding: 0;
     overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+  }
+  .service__item {
+    width: 85%;
+    margin-right: 10px;
   }
 }
 
