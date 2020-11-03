@@ -59,40 +59,21 @@ $(function(){
 });
 
 
-// $('#check').change(function() {
-//   // チェックが入っていたら有効化
-//   if ( $(this).is(':checked') ){ 
-//       // ボタンを有効化
-//       $('#download__button--link').prop('disabled', false);
-//   } else { 
-//       // ボタンを無効化
-//       $('#download__button--link').prop('disabled', true); 
-//   }
-// });
 
-// $(function(){
-//   $("#check").click(function(){
-//   if (this.checked) {
-//   $("#download__button--link").p("<a href='#'>ダウンロード</a>");
-//   } else {
-//   $("#download__button--link").html("ダウンロード");
-//   }
-
-// $(function(){
-// $(document).ready(function(){
-//   $('#download__button--link').click(function(e){
-//   e.preventDefault();
+// $(function() {
+//   $('#check').on('click',function(){
+//     $('.download__button--link').addClass('box__checked');
 //   });
+//   $('#check').on('click',function(){
+//     $('.download__button--link').removeClass('box__checked');
 //   });
 // });
-// $(function(){
-// $('#download__button--link').on('click', function(){
-//   return false;
-// });
-// });
 
-$(function(){
-jQuery(".download__button--link").on('click', function(e){
-  e.preventDefault();
-});
+$(function() {
+  $('.js-active').on('click',function(){
+    $('.download__button--link').addClass('box__checked');
+  });
+  $('.js-active').on('click',function(){
+    $('.download__button--link').removeClass('box__checked');
+  });
 });
