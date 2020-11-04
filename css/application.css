@@ -720,7 +720,7 @@ about
   color: #222222;
   font-size: 52px;
   font-weight: bold;
-  margin: 60px 0 40px 0px;
+  margin: 90px 0 40px 0px;
 }
 
 .about__description {
@@ -1258,6 +1258,9 @@ download
   width: 100%;
   height: auto;
   position: relative;
+  /*================================================================
+js download
+================================================================*/
 }
 
 .download__background {
@@ -1355,7 +1358,7 @@ download
   opacity: 0.7;
 }
 
-.download__button--link {
+.download .js--button {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -1364,11 +1367,11 @@ download
   pointer-events: none;
 }
 
-.download__button--link.box__checked {
+.download .js--button.box__checked {
   pointer-events: auto;
 }
 
-.download__policy--modal {
+.download .js--download__modal {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -1378,13 +1381,13 @@ download
   transition: 0.5s;
 }
 
-.download__policy--modal.show_modal {
+.download .js--download__modal.show_modal {
   opacity: 1;
   visibility: visible;
   z-index: 100;
 }
 
-.download__policy--bg {
+.download .js--download__policy {
   background: rgba(0, 0, 0, 0.45);
   height: 100vh;
   position: absolute;
@@ -1392,7 +1395,7 @@ download
   cursor: pointer;
 }
 
-.download__policy--content {
+.download .js--download__content {
   height: 50%;
   overflow-y: scroll;
   left: 50%;
@@ -1404,21 +1407,21 @@ download
   background-color: #ffffff;
 }
 
-.download__policy--header {
+.download .js--download__header {
   display: flex;
   position: relative;
   margin-bottom: 32px;
 }
 
-.download__policy--header img {
+.download .js--download__header img {
   cursor: pointer;
   padding-bottom: 5px;
   position: absolute;
   right: 3%;
 }
 
-.download__policy--box {
-  background: #1D85CD;
+.download .js--download__box {
+  background: #1d85cd;
   border-radius: 0px 4px 4px 0px;
   position: absolute;
   top: -8px;
@@ -1427,24 +1430,24 @@ download
   height: 42px;
 }
 
-.download__policy--title {
+.download .js--download__title {
   font-size: 32px;
   font-weight: bold;
 }
 
-.download__policy--description {
+.download .js--download__description {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 24px;
 }
 
-.download__policy--list h2 {
+.download .js--download__list h2 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-.download__policy--list li {
+.download .js--download__list li {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 24px;
@@ -1454,6 +1457,11 @@ download
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
+  .download {
+    /*================================================================
+js スマホ
+================================================================*/
+  }
   .download__background {
     background-size: contain;
     background-repeat: no-repeat;
@@ -1493,6 +1501,19 @@ download
   }
   .download__button {
     margin: 0 auto;
+  }
+  .download .js--download__content {
+    width: 324px;
+  }
+  .download .js--download__box {
+    top: -10px;
+    left: -40px;
+  }
+  .download .js--download__title {
+    font-size: 18px;
+  }
+  .download .js--download__description {
+    font-size: 16px;
   }
 }
 

@@ -44,10 +44,10 @@ $(function() {
 // <!-- 利用規約モーダル -->
 $(function() {
   $('.js-modalOpen-download').on('click',function(){
-    $('.download__policy--modal').addClass('show_modal');
+    $('.js--download__modal').addClass('show_modal');
   });
   $('.js-modalClose-download').on('click',function(){
-    $('.download__policy--modal').removeClass('show_modal');
+    $('.js--download__modal').removeClass('show_modal');
   });
 });
 
@@ -108,25 +108,26 @@ $(function(){
 $(function() {
   $('input[name="checkbox"]').change(function() {
     if ( $(this).is(':checked') )
-    $('.download__button--link').addClass('box__checked');
+    $('.js--button').addClass('box__checked');
     else
-    $('.download__button--link').removeClass('box__checked');
+    $('.js--button').removeClass('box__checked');
   });
 });
 
 // $(function() {
 //     if ( $('input[name="checkbox"]').prop('checked') )
-//     $('.download__button--link').addClass('box__checked');
+//     $('.js--button').addClass('box__checked');
 //     else
-//     $('.download__button--link').removeClass('box__checked');
+//     $('.js--button').removeClass('box__checked');
 //   });
+
 
 //   $(function() {
 //   $('input[name="checkbox"]').on('prop',function() {
 //     if ( $(this).prop(':checked') )
-//     $('.download__button--link').addClass('box__checked');
+//     $('.js--button').addClass('box__checked');
 //     else
-//     $('.download__button--link').removeClass('box__checked');
+//     $('.js--button').removeClass('box__checked');
 //   });
 // });
 

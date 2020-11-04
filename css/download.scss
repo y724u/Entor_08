@@ -104,8 +104,11 @@ download
       opacity: $hover_opacity;
     }
   }
-
-  &__button--link {
+  /*================================================================
+js download
+================================================================*/
+  .js {
+    &--button {
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -117,34 +120,34 @@ download
         pointer-events: auto;
       }
     }
-  
-  &__policy--modal {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
-  
-    &.show_modal {
-      opacity: 1;
-      visibility: visible;
-      z-index: 100;
+
+    &--download__modal {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s;
+
+      &.show_modal {
+        opacity: 1;
+        visibility: visible;
+        z-index: 100;
+      }
     }
-  }
 
-  &__policy--bg {
-    background: rgba(0, 0, 0, 0.45);
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-    cursor: pointer;
-  }
+    &--download__policy {
+      background: rgba(0, 0, 0, 0.45);
+      height: 100vh;
+      position: absolute;
+      width: 100%;
+      cursor: pointer;
+    }
 
-    &__policy--content {
+    &--download__content {
       height: 50%;
-      overflow-y:scroll;
+      overflow-y: scroll;
       left: 50%;
       padding: 40px;
       position: absolute;
@@ -154,7 +157,7 @@ download
       background-color: #ffffff;
     }
 
-    &__policy--header {
+    &--download__header {
       display: flex;
       position: relative;
       margin-bottom: 32px;
@@ -165,11 +168,10 @@ download
         position: absolute;
         right: 3%;
       }
+    }
 
-    } 
-
-    &__policy--box {
-      background: #1D85CD;
+    &--download__box {
+      background: #1d85cd;
       border-radius: 0px 4px 4px 0px;
       position: absolute;
       top: -8px;
@@ -178,19 +180,18 @@ download
       height: 42px;
     }
 
-    &__policy--title {
+    &--download__title {
       font-size: 32px;
       font-weight: bold;
     }
-  
-    &__policy--description {
+
+    &--download__description {
       font-size: 18px;
       line-height: 32px;
       margin-bottom: 24px;
     }
 
-    &__policy--list {
-      
+    &--download__list {
       h2 {
         font-size: 18px;
         font-weight: bold;
@@ -202,7 +203,8 @@ download
         line-height: 32px;
         margin-bottom: 24px;
       }
-    } 
+    }
+  }
 }
 
 /*================================================================
@@ -256,6 +258,29 @@ download
 
     &__button {
       margin: 0 auto;
+    }
+    /*================================================================
+js スマホ
+================================================================*/
+
+    .js {
+
+      &--download__content {
+        width: 324px;
+      }
+
+      &--download__box {
+        top: -10px;
+        left: -40px;
+      }
+
+      &--download__title {
+        font-size: 18px;
+      }
+
+      &--download__description {
+        font-size: 16px;
+      }
     }
   }
 }
