@@ -501,80 +501,6 @@ top
   line-height: 42px;
 }
 
-.top__nuv--hamburger {
-  display: none;
-  height: 80px;
-  width: 80px;
-  position: fixed;
-  top: 0;
-  right: 15px;
-  cursor: pointer;
-  z-index: 300;
-}
-
-.top__nuv--hamburger span {
-  height: 1px;
-  width: 24px;
-  background: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 1s;
-}
-
-.top__nuv--hamburger .top__nuv--line_1 {
-  transform: translate(-50%, -8px);
-}
-
-.top__nuv--hamburger .top__nuv--line_3 {
-  transform: translate(-50%, 8px);
-}
-
-.top__nuv--hamburger.active .top__nuv--line_1 {
-  transform: rotate(45deg) translate(-50%, 0);
-  transform-origin: 0% 50%;
-  background: #222222;
-}
-
-.top__nuv--hamburger.active .top__nuv--line_2 {
-  opacity: 0;
-}
-
-.top__nuv--hamburger.active .top__nuv--line_3 {
-  transform: rotate(-45deg) translate(-50%, 0);
-  transform-origin: 0% 50%;
-  background: #222222;
-}
-
-.top__nuv--list {
-  background: rgba(255, 255, 255, 0.8);
-  opacity: 0;
-  visibility: hidden;
-  transition: 1s;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  margin: 0;
-}
-
-.top__nuv--list.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.top__nuv--list ul {
-  margin: 90px 0 0 61px;
-}
-
-.top__nuv--list li {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 32px;
-}
-
 .top__item1 {
   margin-right: 38px;
 }
@@ -598,6 +524,7 @@ top
   color: #FFFFFF;
   font-size: 110px;
   font-weight: bold;
+  margin-top: 160px;
 }
 
 .top__subtitle {
@@ -605,6 +532,83 @@ top
   font-size: 32px;
   font-weight: bold;
   margin-top: 32px;
+}
+
+/*================================================================
+js-top
+================================================================*/
+.js--hamburger {
+  display: none;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+  z-index: 300;
+}
+
+.js--hamburger span {
+  height: 1px;
+  width: 24px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+
+.js--hamburger .js--line_1 {
+  transform: translate(-50%, -8px);
+}
+
+.js--hamburger .js--line_3 {
+  transform: translate(-50%, 8px);
+}
+
+.js--hamburger.active .js--line_1 {
+  transform: rotate(45deg) translate(-50%, 0);
+  transform-origin: 0% 50%;
+  background: #222222;
+}
+
+.js--hamburger.active .js--line_2 {
+  opacity: 0;
+}
+
+.js--hamburger.active .js--line_3 {
+  transform: rotate(-45deg) translate(-50%, 0);
+  transform-origin: 0% 50%;
+  background: #222222;
+}
+
+.js--list {
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.js--list.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.js--list ul {
+  margin: 90px 0 0 61px;
+}
+
+.js--list li {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 32px;
 }
 
 /*================================================================
@@ -653,14 +657,17 @@ top
   .top__nuv {
     display: none;
   }
-  .top__nuv--hamburger {
-    display: block;
-  }
   .top__title {
     font-size: 47px;
   }
   .top__subtitle {
     font-size: 16px;
+  }
+  /*================================================================
+js スマホ
+================================================================*/
+  .js--hamburger {
+    display: block;
   }
 }
 
@@ -1054,7 +1061,10 @@ body.fixed {
   font-size: 16px;
 }
 
-.service__item--modal {
+/*================================================================
+js-service
+================================================================*/
+.js--modal {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -1064,13 +1074,13 @@ body.fixed {
   transition: 0.5s;
 }
 
-.service__item--modal.show_modal {
+.js--modal.show_modal {
   opacity: 1;
   visibility: visible;
   z-index: 100;
 }
 
-.service__item--modal2 {
+.js--modal2 {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -1080,13 +1090,13 @@ body.fixed {
   transition: 0.5s;
 }
 
-.service__item--modal2.show_modal2 {
+.js--modal2.show_modal2 {
   opacity: 1;
   visibility: visible;
   z-index: 100;
 }
 
-.service__item--modal3 {
+.js--modal3 {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -1096,13 +1106,13 @@ body.fixed {
   transition: 0.5s;
 }
 
-.service__item--modal3.show_modal3 {
+.js--modal3.show_modal3 {
   opacity: 1;
   visibility: visible;
   z-index: 100;
 }
 
-.service__item--bg {
+.js--bg {
   background: rgba(0, 0, 0, 0.45);
   height: 100vh;
   position: absolute;
@@ -1110,7 +1120,7 @@ body.fixed {
   cursor: pointer;
 }
 
-.service__item--content {
+.js--content {
   height: 50%;
   overflow-y: scroll;
   left: 50%;
@@ -1122,20 +1132,20 @@ body.fixed {
   background-color: #ffffff;
 }
 
-.service__item--header {
+.js--header {
   display: flex;
   position: relative;
   margin-bottom: 32px;
 }
 
-.service__item--header img {
+.js--header img {
   cursor: pointer;
   margin-bottom: 5px;
   position: absolute;
   right: 3%;
 }
 
-.service__item--box {
+.js--box {
   background: #1d85cd;
   border-radius: 0px 4px 4px 0px;
   position: absolute;
@@ -1145,44 +1155,44 @@ body.fixed {
   height: 42px;
 }
 
-.service__item--title {
+.js--title {
   font-size: 24px;
   font-weight: bold;
   padding-right: 350px;
 }
 
-.service__item--description {
+.js--description {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 24px;
 }
 
-.service__item--inner h2 {
+.js--inner h2 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-.service__item--inner ul {
+.js--inner ul {
   margin-bottom: 24px;
 }
 
-.service__item--inner ul li {
+.js--inner ul li {
   margin-bottom: 8px;
 }
 
-.service__item--development h2 {
+.js--development h2 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-.service__item--development p {
+.js--development p {
   font-size: 18px;
   line-height: 32px;
 }
 
-.service__item--development ul li {
+.js--development ul li {
   margin-bottom: 8px;
 }
 
@@ -1217,6 +1227,27 @@ body.fixed {
   .service__item {
     width: 85%;
     margin-right: 10px;
+  }
+  /*================================================================
+jsスマホ対応
+================================================================*/
+  .js--content {
+    height: 50%;
+    left: 50%;
+    padding: 33px 16px;
+    width: 324px;
+  }
+  .js--box {
+    top: -10px;
+    left: -20px;
+  }
+  .js--title {
+    font-size: 18px;
+    padding-right: 0px;
+  }
+  .js--description {
+    font-size: 16px;
+    margin-bottom: 24px;
   }
 }
 

@@ -14,30 +14,30 @@ $(function(){
 // <!-- サービスシステム開発モーダル -->
 $(function() {
   $('.js-modalOpen').on('click',function(){
-    $('.service__item--modal').addClass('show_modal');
+    $('.js--modal').addClass('show_modal');
   });
   $('.js-modalClose').on('click',function(){
-    $('.service__item--modal').removeClass('show_modal');
+    $('.js--modal').removeClass('show_modal');
   });
 });
 
 // <!-- サービス地方創生モーダル -->
 $(function() {
   $('.js-modalOpen2').on('click',function(){
-    $('.service__item--modal2').addClass('show_modal2');
+    $('.js--modal2').addClass('show_modal2');
   });
   $('.js-modalClose').on('click',function(){
-    $('.service__item--modal2').removeClass('show_modal2');
+    $('.js--modal2').removeClass('show_modal2');
   });
 });
 
 // <!-- サービス人材育成モーダル -->
 $(function() {
   $('.js-modalOpen3').on('click',function(){
-    $('.service__item--modal3').addClass('show_modal3');
+    $('.js--modal3').addClass('show_modal3');
   });
   $('.js-modalClose').on('click',function(){
-    $('.service__item--modal3').removeClass('show_modal3');
+    $('.js--modal3').removeClass('show_modal3');
   });
 });
 
@@ -114,6 +114,23 @@ $(function() {
   });
 });
 
+// $(function() {
+//     if ( $('input[name="checkbox"]').prop('checked') )
+//     $('.download__button--link').addClass('box__checked');
+//     else
+//     $('.download__button--link').removeClass('box__checked');
+//   });
+
+//   $(function() {
+//   $('input[name="checkbox"]').on('prop',function() {
+//     if ( $(this).prop(':checked') )
+//     $('.download__button--link').addClass('box__checked');
+//     else
+//     $('.download__button--link').removeClass('box__checked');
+//   });
+// });
+
+
 // <!-- ハンバーガーメニュー -->
 document.addEventListener("DOMContentLoaded", function() { 
   document.getElementById("hamburger_menu").addEventListener("click", function() {this.classList.toggle("active");
@@ -126,7 +143,7 @@ $(function(){
   var state = false;
   var scrollpos;
  
-  $('.top__nuv--hamburger').on('click', function(){
+  $('.js--hamburger').on('click', function(){
     if(state == false) {
       scrollpos = $(window).scrollTop();
       $('body').addClass('fixed').css({'top': -scrollpos});
@@ -141,18 +158,6 @@ $(function(){
   });
 });
 
-// // <!-- ハンバーガーメニュー表示 -->
-  if (window.matchMedia( "(max-width: 768px)" ).matches) {
-    jQuery(function($){
-      $(window).on('load scroll', function(){
-        if ($(window).scrollTop() > 300) {
-          $('#hamburger_menu').fadeOut(400);
-        } else {
-          $('#hamburger_menu').fadeIn(400);
-        }
-      });
-    });
-    }
 
 
 
