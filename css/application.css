@@ -620,7 +620,7 @@ js-top
     width: 700px;
   }
   .top__box {
-    padding: 500px 0 0 34px;
+    padding: 280px 0 0 34px;
   }
   .top__logo img {
     width: 205px;
@@ -786,6 +786,7 @@ about
     transform: translateX(-50%);
     font-size: 24px;
     width: 180px;
+    margin: 70px 0 40px 0px;
   }
   .about__description {
     margin-top: 40px;
