@@ -104,33 +104,14 @@ $(function(){
 	});
 });
 
-// <!-- 資料ダウンロード チェック判定 -->
-$(function() {
-  $('input[name="checkbox"]').change(function() {
-    if ( $(this).is(':checked') )
+  $(function() {
+  $('input[name="checkbox"]').on('change',function() {
+    if ( $(this).prop('checked') )
     $('.js--button').addClass('box__checked');
     else
     $('.js--button').removeClass('box__checked');
   });
 });
-
-// $(function() {
-//     if ( $('input[name="checkbox"]').prop('checked') )
-//     $('.js--button').addClass('box__checked');
-//     else
-//     $('.js--button').removeClass('box__checked');
-//   });
-
-
-//   $(function() {
-//   $('input[name="checkbox"]').on('prop',function() {
-//     if ( $(this).prop(':checked') )
-//     $('.js--button').addClass('box__checked');
-//     else
-//     $('.js--button').removeClass('box__checked');
-//   });
-// });
-
 
 // <!-- ハンバーガーメニュー -->
 document.addEventListener("DOMContentLoaded", function() { 
@@ -143,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
 $(function(){
   var state = false;
   var scrollpos;
- 
+
   $('.js--hamburger').on('click', function(){
     if(state == false) {
       scrollpos = $(window).scrollTop();
