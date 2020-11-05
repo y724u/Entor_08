@@ -6,15 +6,15 @@ download
 .download {
   width: 100%;
   height: auto;
-  position: relative;
+  overflow: hidden;
 
   &__background {
     background-image: url(../images/DOWNLOAD.png);
     position: absolute;
     width: 1030px;
     height: 140px;
-    top: -18%;
-    left: 30%;
+    top: -40%;
+    left: 10%;
     z-index: -1;
   }
 
@@ -28,6 +28,7 @@ download
 
   &__container {
     display: flex;
+    position: relative;
     width: $container_width;
     margin: 0 auto;
     margin-bottom: 113px;
@@ -215,7 +216,6 @@ js download
 
     &___background {
       width: 100%;
-      overflow: hidden;
     }
 
     &__container {
@@ -227,7 +227,6 @@ js download
   }
   }
 }
-
 /*================================================================
 スマホ対応
 ================================================================*/

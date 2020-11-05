@@ -13,7 +13,6 @@ body.fixed {
 .service {
   width: 100%;
   height: auto;
-  position: relative;
 
   &__background {
     background-image: url(../images/SERVICE.png);
@@ -21,11 +20,12 @@ body.fixed {
     width: 720px;
     height: 140px;
     top: -18%;
-    left: 20%;
+    left: -10%;
     z-index: -1;
   }
 
   &__container {
+    position: relative;
     width: $container_width;
     margin: 0 auto;
     margin-top: 329px;

@@ -81,7 +81,32 @@ footer
   &__copyright {
     font-weight: bold;
     text-align: center;
-    margin: 54px 0 40px 0; 
+    margin: 54px 0 40px 0;
+  }
+}
+/*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+
+    &__container {
+      width: 90%;
+    }
+
+    &__list {
+      display: block;
+
+      li {
+        border-right: none;
+        margin-bottom: 16px;
+
+        a {
+          padding-left: 0;
+        }
+      }
+    }
   }
 }
 
@@ -89,46 +114,43 @@ footer
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
-.footer {
+  .footer {
+    &__container {
+      display: block;
+      width: 300px;
+      margin: 100px 0 0 26px;
+    }
 
-  &__container {
-    display: block;
-    width: 300px;
-    margin: 100px 0 0 26px;
-  }
+    &__left {
+      margin-bottom: 40px;
 
-  &__left {
-    margin-bottom: 40px;
+      ul {
+        li {
+          width: 300px;
+        }
+      }
+    }
 
-    ul {
+    &__right {
+      width: 250px;
+      margin-bottom: 90px;
+    }
+
+    &__list {
+      display: block;
+
       li {
-        width: 300px;
+        border-right: none;
+        margin-bottom: 16px;
+
+        a {
+          padding-left: 0;
+        }
       }
     }
-  }
 
-  &__right {
-    width: 250px;
-    margin-bottom: 90px;
-  }
-
-  &__list {
-    display: block;
-
-    li {
-      border-right: none;
-      margin-bottom: 16px;
-
-      a {
-        padding-left: 0;
-      }
+    &__copyright {
+      margin-bottom: 24px;
     }
-  }
-
-  &__copyright {
-    margin-bottom: 24px;
-  }
-
-  
   }
 }
