@@ -104,7 +104,18 @@ $(function(){
 	});
 });
 
-  $(function() {
+// <!-- ダウンロードボタン活性化&非活性化 -->
+//   $(function() {
+//   $('input[name="checkbox"]').on('change',function() {
+//     if ( $(this).prop('checked') )
+//     $('.js--button').addClass('box__checked');
+//     else
+//     $('.js--button').removeClass('box__checked');
+//   });
+// });
+
+// <!-- ダウンロードボタン活性化&非活性化 -->
+$(function() {
   $('input[name="checkbox"]').on('change',function() {
     if ( $(this).prop('checked') )
     $('.js--button').addClass('box__checked');
@@ -112,6 +123,7 @@ $(function(){
     $('.js--button').removeClass('box__checked');
   });
 });
+
 
 // <!-- ハンバーガーメニュー -->
 document.addEventListener("DOMContentLoaded", function() { 

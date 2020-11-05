@@ -50,7 +50,6 @@ download
 
   input[type="checkbox"] {
     display: none;
-
     &:checked + .download__label::before {
       background: #1dbfcd
         url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.74999%208.14995L1.59999%204.99995L0.549988%206.04995L4.74999%2010.25L13.75%201.24995L12.7%200.199951L4.74999%208.14995Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E")
@@ -61,7 +60,7 @@ download
   &__label {
     cursor: pointer;
     display: inline-block;
-    padding: 15px 40px;
+    padding: 15px 0 15px 40px;
     position: relative;
     width: auto;
 
@@ -91,8 +90,6 @@ download
 
   &__button {
     color: $font-color1;
-    background-color: #1d85cd;
-    border-radius: 4px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2225%22%20height%3D%2225%22%20viewBox%3D%220%200%2025%2025%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M19.7917%209.375H15.625V3.125H9.37504V9.375H5.20837L12.5%2016.6667L19.7917%209.375ZM5.20837%2018.75V20.8333H19.7917V18.75H5.20837Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
     background-position: 36px 11px;
@@ -100,16 +97,15 @@ download
     width: 240px;
     height: 48px;
     margin-top: 39px;
-
-    &:hover {
-      opacity: $hover_opacity;
-    }
   }
   /*================================================================
 js download
 ================================================================*/
   .js {
     &--button {
+      background-color: #1d85cd;
+      border-radius: 4px;
+      opacity: 0.5;
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -119,6 +115,7 @@ js download
 
       &.box__checked {
         pointer-events: auto;
+        opacity: 1;
       }
     }
 
@@ -155,7 +152,7 @@ js download
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 30%;
+      width: 620px;
       background-color: #ffffff;
     }
 
@@ -176,7 +173,7 @@ js download
       background: #1d85cd;
       border-radius: 0px 4px 4px 0px;
       position: absolute;
-      top: -8px;
+      top: 0px;
       left: -40px;
       width: 17px;
       height: 42px;
