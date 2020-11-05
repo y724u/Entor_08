@@ -960,7 +960,7 @@ company
     width: 332px;
     height: 160px;
     position: absolute;
-    top: 7%;
+    top: 20%;
     left: -20%;
     z-index: -1;
   }
@@ -977,6 +977,7 @@ company
   }
   .company__right {
     position: relative;
+    margin-top: 40px;
   }
   .company__title {
     position: absolute;
@@ -1058,7 +1059,7 @@ contact
   .contact {
     height: 375px;
     background-image: url(../images/contact_sp.png);
-    background-size: contain;
+    background-size: cover;
   }
   .contact__tittle {
     width: 328px;
@@ -1323,7 +1324,7 @@ js-service
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .service {
-    width: 375px;
+    width: 100%;
   }
   .service__background {
     background-size: contain;
@@ -1334,7 +1335,7 @@ js-service
   }
   .service__container {
     margin-top: 100px;
-    width: 350px;
+    width: auto;
   }
   .service__title {
     margin-bottom: 30px;

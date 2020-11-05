@@ -247,7 +247,7 @@ js-service
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .service {
-    width: 375px;
+    width: 100%;
 
     &__background {
       background-size: contain;
@@ -259,7 +259,7 @@ js-service
 
     &__container {
       margin-top: 100px;
-      width: 350px;
+      width: auto;
     }
 
     &__title {
