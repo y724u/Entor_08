@@ -856,7 +856,7 @@ company
   height: 390px;
   position: absolute;
   top: 30%;
-  left: 20%;
+  left: -15%;
   z-index: -1;
 }
 
@@ -870,6 +870,7 @@ company
 
 .company__left {
   margin-right: 100px;
+  position: relative;
 }
 
 .company__left--sp {

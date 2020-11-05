@@ -25,7 +25,7 @@ company
     height: 390px;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: -15%;
     z-index: -1;
   }
 
@@ -39,6 +39,7 @@ company
 
   &__left {
     margin-right: 100px;
+    position: relative;
 
     &--sp {
       display: none;
