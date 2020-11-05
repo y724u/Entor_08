@@ -70,22 +70,27 @@ about
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .about {
     &__container {
-      flex-direction: column;
-      width: 700px;
+      width: 90%;
+    }
+
+        &__title {
+      font-size: 36px;
+      margin-top: 40px;
     }
 
     &__left {
-      order: 2;
-      position: relative;
-    }
-
-    &__title {
-      position: absolute;
-      top: -600px;
+     margin-right: 10px;
     }
 
     &__right {
-      order: 1;
+     img {
+      transform: scale(0.9);
+     }
+    }
+
+    &__box {
+      width: 95%;
+      height: 75%;
     }
   }
 }

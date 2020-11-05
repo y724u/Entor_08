@@ -176,9 +176,12 @@ js-top
 ================================================================*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .top {
+    &__menu {
+      padding: 52px 24px 153px 44px;
+    }
 
     &__box {
-      padding: 0 0 216px 34px;
+      padding: 0 0 216px 24px;
     }
 
     &__logo {
@@ -188,12 +191,16 @@ js-top
       }
     }
 
-    &__title {
-      font-size: 94px;
+    &__item1 {
+      margin-right: 18px;
     }
-
-    &__subtitle {
-      font-size: 32px;
+  
+    &__item2 {
+      margin-right: 18px;
+    }
+  
+    &__item3 {
+      margin-right: 18px;
     }
   }
 }

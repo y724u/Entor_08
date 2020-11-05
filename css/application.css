@@ -643,18 +643,24 @@ js-top
 タブレット対応
 ================================================================*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .top__menu {
+    padding: 52px 24px 153px 44px;
+  }
   .top__box {
-    padding: 0 0 216px 34px;
+    padding: 0 0 216px 24px;
   }
   .top__logo img {
     width: 205px;
     height: 35px;
   }
-  .top__title {
-    font-size: 94px;
+  .top__item1 {
+    margin-right: 18px;
   }
-  .top__subtitle {
-    font-size: 32px;
+  .top__item2 {
+    margin-right: 18px;
+  }
+  .top__item3 {
+    margin-right: 18px;
   }
 }
 
@@ -761,19 +767,21 @@ about
 ================================================================*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .about__container {
-    flex-direction: column;
-    width: 700px;
-  }
-  .about__left {
-    order: 2;
-    position: relative;
+    width: 90%;
   }
   .about__title {
-    position: absolute;
-    top: -600px;
+    font-size: 36px;
+    margin-top: 40px;
   }
-  .about__right {
-    order: 1;
+  .about__left {
+    margin-right: 10px;
+  }
+  .about__right img {
+    transform: scale(0.9);
+  }
+  .about__box {
+    width: 95%;
+    height: 75%;
   }
 }
 
