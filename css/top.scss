@@ -14,6 +14,7 @@ top
 .top {
   background-image: url(../images/top.png);
   background-size: cover;
+  position: relative;
   height: 100vh;
   width: 100%;
 
@@ -72,9 +73,11 @@ top
 
   &__box {
     color: $font-color1;
+    position: absolute;
     width: 100%;
     margin: 0 auto;
-    padding: 0 0 216px 130px;
+    bottom: 25%;
+    padding-left: 130px;
   }
 
   &__title {
@@ -181,7 +184,7 @@ js-top
     }
 
     &__box {
-      padding: 0 0 216px 24px;
+      padding-left: 24px;
     }
 
     &__logo {

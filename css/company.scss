@@ -107,9 +107,10 @@ company
 @media only screen and (max-width: 767px) {
   .company {
     &__background {
-      background-size: contain;
-      width: 223px;
-      height: 45px;
+      background-size: cover;
+      position: absolute;
+      width: 285px;
+      height: 60px;
       top: -10%;
       left: 40%;
     }

@@ -484,6 +484,7 @@ top
 .top {
   background-image: url(../images/top.png);
   background-size: cover;
+  position: relative;
   height: 100vh;
   width: 100%;
 }
@@ -539,9 +540,11 @@ top
 
 .top__box {
   color: #FFFFFF;
+  position: absolute;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 216px 130px;
+  bottom: 25%;
+  padding-left: 130px;
 }
 
 .top__title {
@@ -647,7 +650,7 @@ js-top
     padding: 52px 24px 153px 44px;
   }
   .top__box {
-    padding: 0 0 216px 24px;
+    padding-left: 24px;
   }
   .top__logo img {
     width: 205px;
@@ -799,12 +802,12 @@ about
     padding: 0;
   }
   .about__background {
-    background-size: contain;
+    background-size: cover;
     position: absolute;
-    width: 223px;
-    height: 50px;
+    width: 285px;
+    height: 60px;
     top: 20%;
-    left: 25%;
+    left: 20%;
   }
   .about__left {
     order: 2;
@@ -844,8 +847,9 @@ about
     width: 265px;
     height: 160px;
     position: absolute;
-    top: 40%;
-    left: 28%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -30%);
     z-index: -1;
   }
 }
@@ -950,9 +954,10 @@ company
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .company__background {
-    background-size: contain;
-    width: 223px;
-    height: 45px;
+    background-size: cover;
+    position: absolute;
+    width: 285px;
+    height: 60px;
     top: -10%;
     left: 40%;
   }
@@ -1327,15 +1332,16 @@ js-service
     width: 100%;
   }
   .service__background {
-    background-size: contain;
-    width: 210px;
-    height: 40px;
+    background-size: cover;
+    position: absolute;
+    width: 310px;
+    height: 60px;
     top: -10%;
     left: 5%;
   }
   .service__container {
     margin-top: 100px;
-    width: auto;
+    width: 90%;
   }
   .service__title {
     margin-bottom: 30px;
@@ -1358,7 +1364,7 @@ jsスマホ対応
     height: 50%;
     left: 50%;
     padding: 33px 16px;
-    width: 324px;
+    width: 90%;
   }
   .js--box {
     top: -10px;
@@ -1366,7 +1372,7 @@ jsスマホ対応
   }
   .js--title {
     font-size: 18px;
-    padding-right: 0px;
+    padding: 0 0 0 16px;
   }
   .js--description {
     font-size: 16px;
@@ -1605,12 +1611,12 @@ js スマホ
 ================================================================*/
   }
   .download__background {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 223px;
-    height: 150px;
-    top: -5%;
-    left: 30%;
+    width: 470px;
+    height: 60px;
+    top: -20%;
+    left: 0%;
   }
   .download__title {
     font-size: 24px;
