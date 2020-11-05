@@ -16,6 +16,7 @@ contact
     font-weight: bold;
     text-align: center;
     padding-top: 97px;
+    letter-spacing: 0.04em;
 
     &--br {
       display: none;
@@ -47,6 +48,19 @@ contact
 
     &:hover {
       opacity: $hover_opacity;
+    }
+  }
+}
+/*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact {
+    &__tittle {
+      line-height: 44px;
+      &--br {
+        display: block;
+      }
     }
   }
 }

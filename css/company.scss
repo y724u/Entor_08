@@ -65,11 +65,47 @@ company
   }
 }
 /*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .company {
+    &__background {
+      width: 380px;
+      overflow: hidden;
+    }
+
+    &__container {
+      width: 90%;
+    }
+
+    &__title {
+      font-size: 36px;
+      margin-top: 40px;
+    }
+
+    &__left {
+      margin-right: 10px;
+
+      img {
+        transform: scale(0.9);
+      }
+    }
+
+    &__right {
+      margin-top: 0;
+    }
+
+    &__box {
+      width: 95%;
+      height: 75%;
+    }
+  }
+}
+/*================================================================
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .company {
-    
     &__background {
       background-size: contain;
       width: 223px;

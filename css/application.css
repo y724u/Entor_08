@@ -904,6 +904,36 @@ company
 }
 
 /*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .company__background {
+    width: 380px;
+    overflow: hidden;
+  }
+  .company__container {
+    width: 90%;
+  }
+  .company__title {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+  .company__left {
+    margin-right: 10px;
+  }
+  .company__left img {
+    transform: scale(0.9);
+  }
+  .company__right {
+    margin-top: 0;
+  }
+  .company__box {
+    width: 95%;
+    height: 75%;
+  }
+}
+
+/*================================================================
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
@@ -961,6 +991,7 @@ contact
   font-weight: bold;
   text-align: center;
   padding-top: 97px;
+  letter-spacing: 0.04em;
 }
 
 .contact__tittle--br {
@@ -993,6 +1024,18 @@ contact
 
 .contact__inner:hover {
   opacity: 0.7;
+}
+
+/*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact__tittle {
+    line-height: 44px;
+  }
+  .contact__tittle--br {
+    display: block;
+  }
 }
 
 /*================================================================
@@ -1236,6 +1279,30 @@ js-service
 
 .js--development ul li {
   margin-bottom: 8px;
+}
+
+/*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .service {
+    width: 100%;
+  }
+  .service___background {
+    width: 100%;
+    overflow: hidden;
+  }
+  .service__container {
+    width: 90%;
+  }
+  .service__cards {
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .service__item {
+    margin: 0 5px;
+  }
 }
 
 /*================================================================
