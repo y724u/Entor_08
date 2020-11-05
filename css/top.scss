@@ -20,10 +20,10 @@ top
   &__menu {
     display: flex;
     justify-content: space-between;
-    width: 1242px;
+    width: 100%;
     height: 42px;
     margin: 0 auto;
-    padding-top: 52px;
+    padding: 52px 73px 0 83px;
   }
 
   &__logo {
@@ -72,9 +72,9 @@ top
 
   &__box {
     color: $font-color1;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 190px;
+    padding: 0 0 216px 130px;
   }
 
   &__title {
@@ -176,13 +176,9 @@ js-top
 ================================================================*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .top {
-    &__menu {
-      display: block;
-      width: 700px;
-    }
 
     &__box {
-      padding: 280px 0 0 34px;
+      padding: 0 0 216px 34px;
     }
 
     &__logo {
@@ -237,9 +233,7 @@ js-top
       font-size: 16px;
     }
   }
-  /*================================================================
-js スマホ
-================================================================*/
+
   .js--hamburger {
     display: block;
   }

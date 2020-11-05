@@ -491,10 +491,10 @@ top
 .top__menu {
   display: flex;
   justify-content: space-between;
-  width: 1242px;
+  width: 100%;
   height: 42px;
   margin: 0 auto;
-  padding-top: 52px;
+  padding: 52px 73px 0 83px;
 }
 
 .top__logo img {
@@ -539,9 +539,9 @@ top
 
 .top__box {
   color: #FFFFFF;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 190px;
+  padding: 0 0 216px 130px;
 }
 
 .top__title {
@@ -643,12 +643,8 @@ js-top
 タブレット対応
 ================================================================*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .top__menu {
-    display: block;
-    width: 700px;
-  }
   .top__box {
-    padding: 280px 0 0 34px;
+    padding: 0 0 216px 34px;
   }
   .top__logo img {
     width: 205px;
@@ -691,9 +687,6 @@ js-top
   .top__subtitle {
     font-size: 16px;
   }
-  /*================================================================
-js スマホ
-================================================================*/
   .js--hamburger {
     display: block;
   }
@@ -714,7 +707,7 @@ about
   width: 631px;
   height: 140px;
   top: -5%;
-  left: 15%;
+  left: -40%;
   z-index: -1;
 }
 
@@ -723,8 +716,8 @@ about
   width: 402px;
   height: 390px;
   position: absolute;
-  top: 30%;
-  left: 58%;
+  top: 140px;
+  left: 30px;
   z-index: -1;
 }
 
@@ -738,6 +731,11 @@ about
 
 .about__left {
   margin-right: 100px;
+  position: relative;
+}
+
+.about__right {
+  position: relative;
 }
 
 .about__right--sp {

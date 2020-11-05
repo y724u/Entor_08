@@ -14,7 +14,7 @@ about
     width: 631px;
     height: 140px;
     top: -5%;
-    left: 15%;
+    left: -40%;
     z-index: -1;
   }
 
@@ -23,8 +23,8 @@ about
     width: 402px;
     height: 390px;
     position: absolute;
-    top: 30%;
-    left: 58%;
+    top: 140px;
+    left: 30px;
     z-index: -1;
   }
 
@@ -38,9 +38,12 @@ about
 
   &__left {
     margin-right: 100px;
+    position: relative;
   }
 
   &__right {
+    position: relative;
+
     &--sp {
       display: none;
     }
