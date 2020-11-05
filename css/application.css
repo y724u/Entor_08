@@ -2,6 +2,7 @@
 /*! destyle.css v1.0.15 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model */
 /* ============================================ */
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans+JP&family=Roboto&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -471,6 +472,13 @@ template {
 }
 
 /*================================================================
+common
+================================================================*/
+body {
+  font-family: "Noto Sans CJK JP", "Noto Sans JP", sans-serif, "Manrope", "sans-serif";
+}
+
+/*================================================================
 top
 ================================================================*/
 .top {
@@ -505,12 +513,28 @@ top
   margin-right: 38px;
 }
 
+.top__item1 a {
+  letter-spacing: 0.04em;
+}
+
 .top__item2 {
   margin-right: 33px;
 }
 
+.top__item2 a {
+  letter-spacing: 0.04em;
+}
+
 .top__item3 {
   margin-right: 33px;
+}
+
+.top__item3 a {
+  letter-spacing: 0.04em;
+}
+
+.top__item4 a {
+  letter-spacing: 0.04em;
 }
 
 .top__box {
@@ -524,7 +548,9 @@ top
   color: #FFFFFF;
   font-size: 110px;
   font-weight: bold;
+  font-family: "Roboto";
   margin-top: 160px;
+  letter-spacing: 0.04em;
 }
 
 .top__subtitle {
@@ -532,6 +558,7 @@ top
   font-size: 32px;
   font-weight: bold;
   margin-top: 32px;
+  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -609,6 +636,7 @@ js-top
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 32px;
+  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -727,6 +755,7 @@ about
   color: #222222;
   font-size: 18px;
   line-height: 32px;
+  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -864,6 +893,7 @@ company
   color: #222222;
   font-size: 18px;
   line-height: 32px;
+  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -1073,6 +1103,7 @@ js-service
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
+  letter-spacing: 0.04em;
 }
 
 .js--modal.show_modal {
@@ -1089,6 +1120,7 @@ js-service
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
+  letter-spacing: 0.04em;
 }
 
 .js--modal2.show_modal2 {
@@ -1105,6 +1137,7 @@ js-service
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
+  letter-spacing: 0.04em;
 }
 
 .js--modal3.show_modal3 {
@@ -1301,6 +1334,7 @@ js download
   color: #222222;
   line-height: 27px;
   margin-bottom: 50px;
+  letter-spacing: 0.04em;
 }
 
 .download input[type="checkbox"] {
@@ -1380,6 +1414,7 @@ js download
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
+  letter-spacing: 0.04em;
 }
 
 .download .js--download__modal.show_modal {
@@ -1524,6 +1559,7 @@ footer
 .footer {
   width: 100%;
   height: auto;
+  letter-spacing: 0.04em;
 }
 
 .footer__container {

@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
 /*================================================================
+common
+================================================================*/
+body {
+  font-family: $font-family;
+}
+
+/*================================================================
 top
 ================================================================*/
 
@@ -35,14 +42,32 @@ top
 
   &__item1 {
     margin-right: 38px;
+
+    a {
+      letter-spacing: 0.04em;
+    }
   }
 
   &__item2 {
     margin-right: 33px;
+
+    a {
+      letter-spacing: 0.04em;
+    }
   }
 
   &__item3 {
     margin-right: 33px;
+
+    a {
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__item4 {
+    a {
+      letter-spacing: 0.04em;
+    }
   }
 
   &__box {
@@ -56,7 +81,9 @@ top
     color: $font-color1;
     font-size: 110px;
     font-weight: bold;
+    font-family: "Roboto";
     margin-top: 160px;
+    letter-spacing: 0.04em;
   }
 
   &__subtitle {
@@ -64,6 +91,7 @@ top
     font-size: 32px;
     font-weight: bold;
     margin-top: 32px;
+    letter-spacing: 0.04em;
   }
 }
 /*================================================================
@@ -139,6 +167,7 @@ js-top
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 32px;
+    letter-spacing: 0.04em;
   }
 }
 

@@ -45,6 +45,7 @@ download
     color: $font-color2;
     line-height: 27px;
     margin-bottom: 50px;
+    letter-spacing: 0.04em;
   }
 
   input[type="checkbox"] {
@@ -129,6 +130,7 @@ js download
       opacity: 0;
       visibility: hidden;
       transition: 0.5s;
+      letter-spacing: 0.04em;
 
       &.show_modal {
         opacity: 1;
