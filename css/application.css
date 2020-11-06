@@ -796,6 +796,7 @@ about
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .about__container {
+    overflow: hidden;
     width: 90%;
     flex-direction: column;
     margin-top: 0;
@@ -806,8 +807,8 @@ about
     position: absolute;
     width: 285px;
     height: 60px;
-    top: 20%;
-    left: 20%;
+    top: 18%;
+    left: -5%;
   }
   .about__left {
     order: 2;
@@ -815,21 +816,23 @@ about
   }
   .about__title {
     position: absolute;
-    top: -330px;
-    left: 50%;
+    top: -350px;
+    left: 52%;
     transform: translateX(-50%);
     font-size: 24px;
     width: 180px;
   }
   .about__description {
+    font-size: 16px;
+    line-height: 32px;
     width: 327px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 58px;
   }
   .about__right {
     order: 1;
     position: relative;
-    margin-top: 230px;
+    margin-top: 242px;
     width: 100%;
   }
   .about__right img {
@@ -953,13 +956,16 @@ company
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
+  .company {
+    margin-bottom: 80px;
+  }
   .company__background {
     background-size: cover;
     position: absolute;
     width: 285px;
     height: 60px;
-    top: -10%;
-    left: 40%;
+    top: -20%;
+    left: 15%;
   }
   .company__box {
     width: 332px;
@@ -971,6 +977,7 @@ company
   }
   .company__container {
     margin-top: 192px;
+    padding-bottom: 0;
     width: 327px;
     flex-direction: column;
   }
@@ -982,15 +989,20 @@ company
   }
   .company__right {
     position: relative;
-    margin-top: 40px;
+    margin-top: 55px;
   }
   .company__title {
     position: absolute;
-    top: -320px;
+    top: -248px;
     left: 50%;
     transform: translateX(-25%);
     font-size: 24px;
     width: 180px;
+  }
+  .company__descriptions {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 32px;
   }
 }
 
@@ -1062,15 +1074,15 @@ contact
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .contact {
-    height: 375px;
+    height: 310px;
     background-image: url(../images/contact_sp.png);
     background-size: cover;
   }
   .contact__tittle {
     width: 328px;
     margin: 0 auto;
+    padding-top: 80px;
     font-size: 18px;
-    padding-top: 90px;
     line-height: 30px;
   }
   .contact__tittle--br {
@@ -1079,6 +1091,7 @@ contact
   .contact__button {
     background-position: 300px 17px;
     width: 328px;
+    margin-top: 40px;
     height: 58px;
   }
   .contact__inner {
@@ -1340,7 +1353,7 @@ js-service
     left: 5%;
   }
   .service__container {
-    margin-top: 100px;
+    margin-top: 170px;
     width: 90%;
   }
   .service__title {
@@ -1563,6 +1576,7 @@ js download
 .download .js--download__title {
   font-size: 32px;
   font-weight: bold;
+  margin-top: 150px;
 }
 
 .download .js--download__description {
@@ -1620,13 +1634,16 @@ js スマホ
   }
   .download__title {
     font-size: 24px;
-    margin-top: 130px;
+    margin-top: 153px;
   }
   .download__container {
     width: 327px;
     display: block;
     margin: 0 auto;
     margin-bottom: 113px;
+  }
+  .download__right {
+    margin-top: 5px;
   }
   .download__left {
     width: 216px;
@@ -1640,11 +1657,14 @@ js スマホ
   }
   .download__description {
     margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
   }
   .download__policy {
     width: 270px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
     padding-left: 40px;
   }
   .download__button {

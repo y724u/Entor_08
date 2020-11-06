@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*================================================================
 contact
 ================================================================*/
@@ -69,15 +68,15 @@ contact
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .contact {
-    height: 375px;
+    height: 310px;
     background-image: url(../images/contact_sp.png);
     background-size: cover;
 
     &__tittle {
       width: 328px;
       margin: 0 auto;
+      padding-top: 80px;
       font-size: 18px;
-      padding-top: 90px;
       line-height: 30px;
 
       &--br {
@@ -88,6 +87,7 @@ contact
     &__button {
       background-position: 300px 17px;
       width: 328px;
+      margin-top: 40px;
       height: 58px;
     }
 

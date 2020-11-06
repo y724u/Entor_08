@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*================================================================
 company
 ================================================================*/
@@ -106,13 +105,15 @@ company
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .company {
+    margin-bottom: 80px;
+    
     &__background {
       background-size: cover;
       position: absolute;
       width: 285px;
       height: 60px;
-      top: -10%;
-      left: 40%;
+      top: -20%;
+      left: 15%;
     }
 
     &__box {
@@ -126,6 +127,7 @@ company
 
     &__container {
       margin-top: 192px;
+      padding-bottom: 0;
       width: 327px;
       flex-direction: column;
     }
@@ -142,16 +144,22 @@ company
 
     &__right {
       position: relative;
-      margin-top: 40px;
+      margin-top: 55px;
     }
 
     &__title {
       position: absolute;
-      top: -320px;
+      top: -248px;
       left: 50%;
       transform: translateX(-25%);
       font-size: 24px;
       width: 180px;
+    }
+
+    &__descriptions {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      line-height: 32px;
     }
   }
 }

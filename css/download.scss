@@ -183,6 +183,7 @@ js download
     &--download__title {
       font-size: 32px;
       font-weight: bold;
+      margin-top: 150px;
     }
 
     &--download__description {
@@ -224,7 +225,7 @@ js download
 
     &__left {
       margin-right: 10px;
-  }
+    }
   }
 }
 /*================================================================
@@ -243,7 +244,7 @@ js download
 
     &__title {
       font-size: 24px;
-      margin-top: 130px;
+      margin-top: 153px;
     }
 
     &__container {
@@ -251,6 +252,10 @@ js download
       display: block;
       margin: 0 auto;
       margin-bottom: 113px;
+    }
+
+    &__right {
+      margin-top: 5px;
     }
 
     &__left {
@@ -267,12 +272,15 @@ js download
 
     &__description {
       margin-bottom: 27px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
     }
 
     &__policy {
       width: 270px;
       margin: 0 auto;
-      margin-bottom: 35px;
+      margin-bottom: 10px;
       padding-left: 40px;
     }
 

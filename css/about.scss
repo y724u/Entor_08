@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*================================================================
 about
 ================================================================*/
@@ -72,19 +71,19 @@ about
       width: 90%;
     }
 
-        &__title {
+    &__title {
       font-size: 36px;
       margin-top: 40px;
     }
 
     &__left {
-     margin-right: 10px;
+      margin-right: 10px;
     }
 
     &__right {
-     img {
-      transform: scale(0.9);
-     }
+      img {
+        transform: scale(0.9);
+      }
     }
 
     &__box {
@@ -98,8 +97,8 @@ about
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .about {
-
     &__container {
+      overflow: hidden;
       width: 90%;
       flex-direction: column;
       margin-top: 0;
@@ -111,8 +110,8 @@ about
       position: absolute;
       width: 285px;
       height: 60px;
-      top: 20%;
-      left: 20%;
+      top: 18%;
+      left: -5%;
     }
 
     &__left {
@@ -122,23 +121,25 @@ about
 
     &__title {
       position: absolute;
-      top: -330px;
-      left: 50%;
+      top: -350px;
+      left: 52%;
       transform: translateX(-50%);
       font-size: 24px;
       width: 180px;
     }
 
     &__description {
+      font-size: 16px;
+      line-height: 32px;
       width: 327px;
       margin: 0 auto;
-      padding-top: 40px;
+      padding-top: 58px;
     }
 
     &__right {
       order: 1;
       position: relative;
-      margin-top: 230px;
+      margin-top: 242px;
       width: 100%;
 
       img {
