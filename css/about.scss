@@ -49,17 +49,17 @@ about
   }
 
   &__title {
-    color: $font-color2;
-    font-size: $section-font-size;
+    color: $font-black;
+    font-size: $section-title-font-size;
     font-weight: bold;
     margin: 90px 0 40px 0px;
   }
 
   &__description {
-    color: $font-color2;
+    color: $font-black;
     font-size: 18px;
     line-height: 32px;
-    letter-spacing: 0.04em;
+    
   }
 }
 /*================================================================

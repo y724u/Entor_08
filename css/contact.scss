@@ -3,19 +3,19 @@
 contact
 ================================================================*/
 .contact {
-  $font-color2: #222222;
+  $font-black: #222222;
   width: 100%;
   height: 364px;
   background-image: url(../images/contact.png);
   background-size: cover;
 
   &__tittle {
-    color: $font-color1;
+    color: $font-white;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
     padding-top: 97px;
-    letter-spacing: 0.04em;
+    
 
     &--br {
       display: none;
@@ -36,7 +36,7 @@ contact
 
   &__inner {
     background: rgba(255, 255, 255, 0.25);
-    color: $font-color1;
+    color: $font-white;
     display: block;
     font-weight: bold;
     width: 100%;

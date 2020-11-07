@@ -51,17 +51,16 @@ company
   }
 
   &__title {
-    color: $font-color2;
-    font-size: $section-font-size;
+    color: $font-black;
+    font-size: $section-title-font-size;
     font-weight: bold;
     margin-bottom: 40px;
   }
 
   &__descriptions {
-    color: $font-color2;
+    color: $font-black;
     font-size: 18px;
     line-height: 32px;
-    letter-spacing: 0.04em;
   }
 }
 /*================================================================
@@ -158,7 +157,7 @@ company
 
     &__descriptions {
       font-size: 16px;
-      letter-spacing: 0.04em;
+      
       line-height: 32px;
     }
   }

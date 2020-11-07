@@ -476,6 +476,7 @@ common
 ================================================================*/
 body {
   font-family: "Noto Sans CJK JP", "Noto Sans JP", sans-serif, "Manrope", "sans-serif";
+  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -510,32 +511,8 @@ top
   line-height: 42px;
 }
 
-.top__item1 {
-  margin-right: 38px;
-}
-
-.top__item1 a {
-  letter-spacing: 0.04em;
-}
-
-.top__item2 {
-  margin-right: 33px;
-}
-
-.top__item2 a {
-  letter-spacing: 0.04em;
-}
-
-.top__item3 {
-  margin-right: 33px;
-}
-
-.top__item3 a {
-  letter-spacing: 0.04em;
-}
-
-.top__item4 a {
-  letter-spacing: 0.04em;
+.top__item + .top__item {
+  margin-left: 38px;
 }
 
 .top__box {
@@ -552,7 +529,6 @@ top
   font-size: 110px;
   font-weight: bold;
   font-family: "Roboto";
-  letter-spacing: 0.04em;
   line-height: 128%;
   margin-bottom: 32px;
 }
@@ -561,7 +537,6 @@ top
   color: #FFFFFF;
   font-size: 32px;
   font-weight: bold;
-  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -639,7 +614,6 @@ js-top
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 32px;
-  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -765,7 +739,6 @@ about
   color: #222222;
   font-size: 18px;
   line-height: 32px;
-  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -920,7 +893,6 @@ company
   color: #222222;
   font-size: 18px;
   line-height: 32px;
-  letter-spacing: 0.04em;
 }
 
 /*================================================================
@@ -1001,7 +973,6 @@ company
   }
   .company__descriptions {
     font-size: 16px;
-    letter-spacing: 0.04em;
     line-height: 32px;
   }
 }
@@ -1022,7 +993,6 @@ contact
   font-weight: bold;
   text-align: center;
   padding-top: 97px;
-  letter-spacing: 0.04em;
 }
 
 .contact__tittle--br {
@@ -1185,7 +1155,6 @@ js-service
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
-  letter-spacing: 0.04em;
 }
 
 .js--modal.show_modal {
@@ -1202,7 +1171,6 @@ js-service
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
-  letter-spacing: 0.04em;
 }
 
 .js--modal2.show_modal2 {
@@ -1219,7 +1187,6 @@ js-service
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
-  letter-spacing: 0.04em;
 }
 
 .js--modal3.show_modal3 {
@@ -1443,7 +1410,6 @@ js download
   color: #222222;
   line-height: 27px;
   margin-bottom: 50px;
-  letter-spacing: 0.04em;
 }
 
 .download input[type="checkbox"] {
@@ -1521,7 +1487,6 @@ js download
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
-  letter-spacing: 0.04em;
 }
 
 .download .js--download__modal.show_modal {
@@ -1659,7 +1624,6 @@ js スマホ
     margin-bottom: 27px;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 0.04em;
   }
   .download__policy {
     width: 270px;
@@ -1691,7 +1655,6 @@ footer
 .footer {
   width: 100%;
   height: auto;
-  letter-spacing: 0.04em;
 }
 
 .footer__container {

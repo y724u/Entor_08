@@ -1,12 +1,6 @@
 @charset "UTF-8";
 
 /*================================================================
-common
-================================================================*/
-body {
-  font-family: $font-family;
-}
-/*================================================================
 top
 ================================================================*/
 .top {
@@ -34,43 +28,19 @@ top
 
   &__lists {
     display: flex;
-    color: $font-color1;
+    color: $font-white;
     font-weight: bold;
     line-height: 42px;
   }
 
-  &__item1 {
-    margin-right: 38px;
-
-    a {
-      letter-spacing: 0.04em;
-    }
-  }
-
-  &__item2 {
-    margin-right: 33px;
-
-    a {
-      letter-spacing: 0.04em;
-    }
-  }
-
-  &__item3 {
-    margin-right: 33px;
-
-    a {
-      letter-spacing: 0.04em;
-    }
-  }
-
-  &__item4 {
-    a {
-      letter-spacing: 0.04em;
+  &__item {
+    & + & {
+      margin-left: 38px;
     }
   }
 
   &__box {
-    color: $font-color1;
+    color: $font-white;
     position: absolute;
     width: 100%;
     margin: 0 auto;
@@ -79,20 +49,18 @@ top
   }
 
   &__title {
-    color: $font-color1;
+    color: $font-white;
     font-size: 110px;
     font-weight: bold;
     font-family: "Roboto";
-    letter-spacing: 0.04em;
     line-height: 128%;
     margin-bottom: 32px;
   }
 
   &__subtitle {
-    color: $font-color1;
+    color: $font-white;
     font-size: 32px;
     font-weight: bold;
-    letter-spacing: 0.04em;
   }
 }
 /*================================================================
@@ -168,7 +136,6 @@ js-top
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 32px;
-    letter-spacing: 0.04em;
   }
 }
 

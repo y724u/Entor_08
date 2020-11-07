@@ -32,8 +32,8 @@ body.fixed {
   }
 
   &__title {
-    color: $font-color2;
-    font-size: $section-font-size;
+    color: $font-black;
+    font-size: $section-title-font-size;
     font-weight: bold;
     text-align: center;
     margin-bottom: 56px;
@@ -60,7 +60,7 @@ body.fixed {
   }
 
   &__content {
-    color: $font-color2;
+    color: $font-black;
     font-size: 24px;
     font-weight: bold;
     margin: 16px 0 6px 0;
@@ -82,7 +82,6 @@ js-service
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-    letter-spacing: 0.04em;
 
     &.show_modal {
       opacity: 1;
@@ -99,7 +98,7 @@ js-service
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-    letter-spacing: 0.04em;
+    
 
     &.show_modal2 {
       opacity: 1;
@@ -116,7 +115,7 @@ js-service
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-    letter-spacing: 0.04em;
+    
 
     &.show_modal3 {
       opacity: 1;

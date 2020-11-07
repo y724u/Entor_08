@@ -19,8 +19,8 @@ download
   }
 
   &__title {
-    color: $font-color2;
-    font-size: $section-font-size;
+    color: $font-black;
+    font-size: $section-title-font-size;
     font-weight: bold;
     text-align: center;
     margin: 253px 0 56px 0;
@@ -43,10 +43,10 @@ download
   }
 
   &__description {
-    color: $font-color2;
+    color: $font-black;
     line-height: 27px;
     margin-bottom: 50px;
-    letter-spacing: 0.04em;
+    
   }
 
   input[type="checkbox"] {
@@ -90,7 +90,7 @@ download
   }
 
   &__button {
-    color: $font-color1;
+    color: $font-white;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2225%22%20height%3D%2225%22%20viewBox%3D%220%200%2025%2025%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M19.7917%209.375H15.625V3.125H9.37504V9.375H5.20837L12.5%2016.6667L19.7917%209.375ZM5.20837%2018.75V20.8333H19.7917V18.75H5.20837Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat;
     background-position: 36px 11px;
@@ -128,7 +128,7 @@ js download
       opacity: 0;
       visibility: hidden;
       transition: 0.5s;
-      letter-spacing: 0.04em;
+      
 
       &.show_modal {
         opacity: 1;
@@ -274,7 +274,7 @@ js download
       margin-bottom: 27px;
       font-size: 16px;
       line-height: 24px;
-      letter-spacing: 0.04em;
+      
     }
 
     &__policy {

@@ -114,17 +114,16 @@ $(function () {
 });
 
 // <!-- ハンバーガーメニュー -->
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("hamburger_menu").addEventListener("click", function () {
-    this.classList.toggle("active");
-    document.getElementById("nav").classList.toggle("active");
-  })
+$(function () {
+  $('.js--hamburger').on('click', function () {
+    $('.js-open').toggleClass('active')
+  });
 });
 
 // <!-- ハンバーガーメニュースクールロールストップ -->
 $(function () {
-  var state = false;
-  var scrollpos;
+  let state = false;
+  let scrollpos;
 
   $('.js--hamburger').on('click', function () {
     if (state == false) {
