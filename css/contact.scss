@@ -15,9 +15,8 @@ contact
     font-weight: bold;
     text-align: center;
     padding-top: 97px;
-    
 
-    &--br {
+    br {
       display: none;
     }
   }
@@ -57,7 +56,7 @@ contact
   .contact {
     &__tittle {
       line-height: 44px;
-      &--br {
+      br {
         display: block;
       }
     }
@@ -79,7 +78,7 @@ contact
       font-size: 18px;
       line-height: 30px;
 
-      &--br {
+      br {
         display: block;
       }
     }

@@ -2,10 +2,10 @@
 // <!-- スムーススクロール -->
 $(function () {
   $('a[href^="#"]').click(function () {
-    var speed = 700;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top - 110;
+    let speed = 700;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top - 110;
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
@@ -53,7 +53,7 @@ $(function () {
 
 // <!-- サービスシステム開発モーダルスクロールストップ -->
 $(function () {
-  var scrollPosition;
+  let scrollPosition;
   $(".js-modalOpen").on("click", function () {
     scrollPosition = $(window).scrollTop();
     $('body').addClass('fixed').css({ 'top': -scrollPosition });
@@ -66,7 +66,7 @@ $(function () {
 
 // <!-- サービス地方創生モーダルスクロールストップ -->
 $(function () {
-  var scrollPosition;
+  let scrollPosition;
   $(".js-modalOpen2").on("click", function () {
     scrollPosition = $(window).scrollTop();
     $('body').addClass('fixed').css({ 'top': -scrollPosition });
@@ -79,7 +79,7 @@ $(function () {
 
 // <!-- サービス人材育成モーダルスクロールストップ -->
 $(function () {
-  var scrollPosition;
+  let scrollPosition;
   $(".js-modalOpen3").on("click", function () {
     scrollPosition = $(window).scrollTop();
     $('body').addClass('fixed').css({ 'top': -scrollPosition });
@@ -92,7 +92,7 @@ $(function () {
 
 // <!-- 利用規約モーダルストップ -->
 $(function () {
-  var scrollPosition;
+  let scrollPosition;
   $(".js-modalOpen-download").on("click", function () {
     scrollPosition = $(window).scrollTop();
     $('body').addClass('fixed').css({ 'top': -scrollPosition });

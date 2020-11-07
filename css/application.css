@@ -995,7 +995,7 @@ contact
   padding-top: 97px;
 }
 
-.contact__tittle--br {
+.contact__tittle br {
   display: none;
 }
 
@@ -1034,7 +1034,7 @@ contact
   .contact__tittle {
     line-height: 44px;
   }
-  .contact__tittle--br {
+  .contact__tittle br {
     display: block;
   }
 }
@@ -1055,7 +1055,7 @@ contact
     font-size: 18px;
     line-height: 30px;
   }
-  .contact__tittle--br {
+  .contact__tittle br {
     display: block;
   }
   .contact__button {
