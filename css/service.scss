@@ -98,7 +98,6 @@ js-service
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-    
 
     &.show_modal2 {
       opacity: 1;
@@ -115,7 +114,6 @@ js-service
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-    
 
     &.show_modal3 {
       opacity: 1;
@@ -259,7 +257,8 @@ js-service
 
     &__container {
       margin-top: 170px;
-      width: 90%;
+      padding-left: 10px;
+      width: 100%;
     }
 
     &__title {
@@ -277,6 +276,10 @@ js-service
     &__item {
       width: 85%;
       margin-right: 10px;
+    }
+
+    &__details {
+      font-size: 14px;
     }
   }
 

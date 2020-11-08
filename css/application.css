@@ -1321,7 +1321,8 @@ js-service
   }
   .service__container {
     margin-top: 170px;
-    width: 90%;
+    padding-left: 10px;
+    width: 100%;
   }
   .service__title {
     margin-bottom: 30px;
@@ -1336,6 +1337,9 @@ js-service
   .service__item {
     width: 85%;
     margin-right: 10px;
+  }
+  .service__details {
+    font-size: 14px;
   }
   /*================================================================
 jsスマホ対応
