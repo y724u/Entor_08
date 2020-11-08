@@ -1049,7 +1049,7 @@ contact
     background-size: cover;
   }
   .contact__tittle {
-    width: 328px;
+    width: 318px;
     margin: 0 auto;
     padding-top: 80px;
     font-size: 18px;
@@ -1060,7 +1060,7 @@ contact
   }
   .contact__button {
     background-position: 300px 17px;
-    width: 328px;
+    width: 300px;
     margin-top: 40px;
     height: 58px;
   }
