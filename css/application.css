@@ -588,7 +588,7 @@ js-top
   background: #222222;
 }
 
-.js--list {
+.sp--list {
   background: rgba(255, 255, 255, 0.8);
   opacity: 0;
   visibility: hidden;
@@ -601,16 +601,16 @@ js-top
   margin: 0;
 }
 
-.js--list.active {
+.sp--list.active {
   opacity: 1;
   visibility: visible;
 }
 
-.js--list ul {
+.sp--list ul {
   margin: 90px 0 0 61px;
 }
 
-.js--list li {
+.sp--list li {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 32px;
