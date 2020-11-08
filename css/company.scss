@@ -105,7 +105,7 @@ company
 @media only screen and (max-width: 767px) {
   .company {
     margin-bottom: 80px;
-    
+
     &__background {
       background-size: cover;
       position: absolute;
@@ -148,7 +148,7 @@ company
 
     &__title {
       position: absolute;
-      top: -248px;
+      top: -280px;
       left: 50%;
       transform: translateX(-25%);
       font-size: 24px;
@@ -157,7 +157,6 @@ company
 
     &__descriptions {
       font-size: 16px;
-      
       line-height: 32px;
     }
   }
