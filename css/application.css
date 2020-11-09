@@ -770,16 +770,16 @@ about
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .about__container {
-    overflow: hidden;
     width: 327px;
     flex-direction: column;
     margin-top: 0;
     padding: 0;
   }
   .about__background {
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    width: 285px;
+    width: 100%;
     height: 60px;
     top: 18%;
     left: -5%;
@@ -933,11 +933,12 @@ company
     margin-bottom: 80px;
   }
   .company__background {
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    width: 285px;
-    height: 60px;
-    top: -20%;
+    width: 100%;
+    height: 70px;
+    top: -22%;
     left: 15%;
   }
   .company__box {
