@@ -11,38 +11,32 @@ $(function () {
   });
 
   // <!-- サービスシステム開発モーダル -->
+  let scrollPosition1;
   $('.js-modalOpen').each(function () {
-    $(this).on('click',function() {
+    $(this).on('click', function () {
       const target = $(this).data('target');
       const modal = document.getElementById(target);
-      const scrollPosition1 = $(window).scrollTop();
-      $ (modal).addClass('show_modal');
-      $('body').addClass('fixed').css({ 'top': -scrollPosition1});
+      scrollPosition1 = $(window).scrollTop();
+      $(modal).addClass('show_modal');
+      $('body').addClass('fixed').css({ 'top': -scrollPosition1 });
       return false;
     });
-    });
-    $('.js-modalClose').on('click', function () {
-      $('.js--modal').removeClass('show_modal');
-      $('body').removeClass('fixed').css({ 'top': 0 });
-    window.scrollTo(0, scrollPosition1);
-    });
-  
-    　
-  // <!-- 利用規約モーダル -->
-  $('.js-modalOpen-download').on('click', function () {
-    $('.js--download__modal').addClass('show_modal');
   });
-  $('.js-modalClose-download').on('click', function () {
-    $('.js--download__modal').removeClass('show_modal');
+  $('.js-modalClose').on('click', function () {
+    $('.js--modal').removeClass('show_modal');
+    $('body').removeClass('fixed').css({ 'top': 0 });
+    window.scrollTo(0, scrollPosition1);
   });
 
-  // <!-- 利用規約モーダルストップ -->
+  // <!-- 利用規約モーダル -->
   let scrollPosition;
-  $(".js-modalOpen-download").on("click", function () {
+  $('.js-modalOpen-download').on('click', function () {
+    $('.js--download__modal').addClass('show_modal');
     scrollPosition = $(window).scrollTop();
     $('body').addClass('fixed').css({ 'top': -scrollPosition });
   });
-  $(".js-modalClose-download").on("click", function () {
+  $('.js-modalClose-download').on('click', function () {
+    $('.js--download__modal').removeClass('show_modal');
     $('body').removeClass('fixed').css({ 'top': 0 });
     window.scrollTo(0, scrollPosition);
   });
@@ -76,5 +70,4 @@ $(function () {
       state = false;
     }
   });
-
 });
