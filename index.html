@@ -112,7 +112,7 @@ contact
 service
 ================================================================*/ -->
   <section class="service" id="service">
-    <div class="js--modal">
+    <div class="js--modal" id="modal01">
       <div class="js--bg js-modalClose"></div>
       <div class="js--content">
         <div class="js--header">
@@ -141,9 +141,9 @@ service
         </div>
       </div>
     </div>
-    <div class="js--modal2">
+    <div class="js--modal" id="modal02">
       <div class="js--bg js-modalClose"></div>
-      <div class="js--content">
+      <div class="js--content" >
         <div class="js--header">
           <div class="js--box"></div>
           <h1 class="js--title">地方創生</h1>
@@ -172,7 +172,7 @@ service
         </div>
       </div>
     </div>
-    <div class="js--modal3">
+    <div class="js--modal" id="modal03">
       <div class="js--bg js-modalClose"></div>
       <div class="js--content">
         <div class="js--header">
@@ -197,21 +197,21 @@ service
       <div class="service__background"></div>
       <h2 class="service__title">事業内容</h2>
       <div class="service__cards">
-        <div class="service__item js-modalOpen">
+        <div class="service__item js-modalOpen" data-target="modal01">
           <div class="service__image"><img src="./images/service_1.png" alt="システム開発"></div>
           <dl>
             <dt class="service__content">システム開発</dt>
             <dd class="service__details">Webサイト制作・アプリ開発・IoT開発</dd>
           </dl>
         </div>
-        <div class="service__item js-modalOpen2">
+        <div class="service__item js-modalOpen" data-target="modal02">
           <div class="service__image"><img src="./images/service_2.png" alt="地方創生"></div>
           <dl>
             <dt class="service__content">地方創生</dt>
             <dd class="service__details">九州地方活性活動・農業支援活動</dd>
           </dl>
         </div>
-        <div class="service__item js-modalOpen3">
+        <div class="service__item js-modalOpen" data-target="modal03">
           <div class="service__image"><img src="./images/service_3.png" alt="人材育成"></div>
           <dl>
             <dt class="service__content">人材育成</dt>
