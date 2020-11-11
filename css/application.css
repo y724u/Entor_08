@@ -588,35 +588,6 @@ js-top
   background: #222222;
 }
 
-.sp--list {
-  background: rgba(255, 255, 255, 0.8);
-  opacity: 0;
-  visibility: hidden;
-  transition: 1s;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  margin: 0;
-  z-index: 200;
-}
-
-.sp--list.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.sp--list ul {
-  margin: 90px 0 0 61px;
-}
-
-.sp--list li {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 32px;
-}
-
 /*================================================================
 タブレット対応
 ================================================================*/
@@ -630,15 +601,6 @@ js-top
   .top__logo img {
     width: 205px;
     height: 35px;
-  }
-  .top__item1 {
-    margin-right: 18px;
-  }
-  .top__item2 {
-    margin-right: 18px;
-  }
-  .top__item3 {
-    margin-right: 18px;
   }
 }
 
@@ -665,7 +627,34 @@ js-top
     height: 25px;
   }
   .top__nuv {
-    display: none;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 200;
+  }
+  .top__nuv.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .top__lists {
+    color: #222222;
+    display: block;
+    margin: 90px 0 0 61px;
+  }
+  .top__item {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+  .top__item + .top__item {
+    margin-left: 0px;
   }
   .top__title {
     font-size: 47px;
