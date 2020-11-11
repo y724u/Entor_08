@@ -64,7 +64,7 @@ body.fixed {
     padding-right: 350px;
   }
 
-  &--description {
+  &__description {
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 24px;
@@ -75,12 +75,14 @@ body.fixed {
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 8px;
+      line-height: 32px;
     }
 
     ul {
       margin-bottom: 24px;
       li {
         margin-bottom: 8px;
+        line-height: 32px;
       }
     }
   }
@@ -100,6 +102,7 @@ body.fixed {
     ul {
       li {
         margin-bottom: 8px;
+        line-height: 32px;
       }
     }
   }

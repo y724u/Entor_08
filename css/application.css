@@ -1131,7 +1131,7 @@ body.fixed {
   padding-right: 350px;
 }
 
-.service--description {
+.service__description {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 24px;
@@ -1141,6 +1141,7 @@ body.fixed {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
+  line-height: 32px;
 }
 
 .service__inner ul {
@@ -1149,6 +1150,7 @@ body.fixed {
 
 .service__inner ul li {
   margin-bottom: 8px;
+  line-height: 32px;
 }
 
 .service__development h2 {
@@ -1164,6 +1166,7 @@ body.fixed {
 
 .service__development ul li {
   margin-bottom: 8px;
+  line-height: 32px;
 }
 
 .service__background {
