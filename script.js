@@ -12,7 +12,6 @@ $(function () {
 
   // <!-- サービスシステム開発モーダル -->
   let scrollPosition1;
-
   $('.js-modalOpen').on('click',function() {
       const target = $(this).data('target');
       const modal = document.getElementById(target);
