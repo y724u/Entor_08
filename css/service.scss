@@ -14,6 +14,96 @@ body.fixed {
   width: 100%;
   height: auto;
 
+  &__bg {
+    background: rgba(0, 0, 0, 0.45);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__project {
+    border-radius: 8px;
+    height: 50%;
+    overflow-y: scroll;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 620px;
+    background-color: #ffffff;
+  }
+
+  &__header {
+    display: flex;
+    position: relative;
+    margin-bottom: 32px;
+
+    img {
+      cursor: pointer;
+      margin-bottom: 5px;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__box {
+    background: #1d85cd;
+    border-radius: 0px 4px 4px 0px;
+    position: absolute;
+    top: -8px;
+    left: -40px;
+    width: 17px;
+    height: 42px;
+  }
+
+  &__work {
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 350px;
+  }
+
+  &--description {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  &__inner {
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin-bottom: 24px;
+      li {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__development {
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
   &__background {
     background-image: url(../images/SERVICE.png);
     position: absolute;
@@ -87,128 +177,6 @@ js-service
       opacity: 1;
       visibility: visible;
       z-index: 100;
-    }
-  }
-
-  &--modal2 {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
-
-    &.show_modal2 {
-      opacity: 1;
-      visibility: visible;
-      z-index: 100;
-    }
-  }
-
-  &--modal3 {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
-
-    &.show_modal3 {
-      opacity: 1;
-      visibility: visible;
-      z-index: 100;
-    }
-  }
-
-  &--bg {
-    background: rgba(0, 0, 0, 0.45);
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-    cursor: pointer;
-  }
-
-  &--content {
-    border-radius: 8px;
-    height: 50%;
-    overflow-y: scroll;
-    left: 50%;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 620px;
-    background-color: #ffffff;
-  }
-
-  &--header {
-    display: flex;
-    position: relative;
-    margin-bottom: 32px;
-
-    img {
-      cursor: pointer;
-      margin-bottom: 5px;
-      position: absolute;
-      right: 0;
-    }
-  }
-
-  &--box {
-    background: #1d85cd;
-    border-radius: 0px 4px 4px 0px;
-    position: absolute;
-    top: -8px;
-    left: -40px;
-    width: 17px;
-    height: 42px;
-  }
-
-  &--title {
-    font-size: 24px;
-    font-weight: bold;
-    padding-right: 350px;
-  }
-
-  &--description {
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 24px;
-  }
-
-  &--inner {
-    h2 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    ul {
-      margin-bottom: 24px;
-      li {
-        margin-bottom: 8px;
-      }
-    }
-  }
-
-  &--development {
-    h2 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 32px;
-    }
-
-    ul {
-      li {
-        margin-bottom: 8px;
-      }
     }
   }
 }
@@ -286,25 +254,25 @@ js-service
   /*================================================================
 jsスマホ対応
 ================================================================*/
-  .js {
-    &--content {
+  .service {
+    &__project {
       height: 50%;
       left: 50%;
       padding: 33px 16px;
       width: 90%;
     }
 
-    &--box {
+    &__box {
       top: -10px;
       left: -20px;
     }
 
-    &--title {
+    &__work {
       font-size: 18px;
       padding: 0 0 0 16px;
     }
 
-    &--description {
+    &__description {
       font-size: 16px;
       margin-bottom: 24px;
     }

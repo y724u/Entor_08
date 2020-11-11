@@ -1079,6 +1079,91 @@ body.fixed {
   height: auto;
 }
 
+.service__bg {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+}
+
+.service__project {
+  border-radius: 8px;
+  height: 50%;
+  overflow-y: scroll;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  background-color: #ffffff;
+}
+
+.service__header {
+  display: flex;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.service__header img {
+  cursor: pointer;
+  margin-bottom: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.service__box {
+  background: #1d85cd;
+  border-radius: 0px 4px 4px 0px;
+  position: absolute;
+  top: -8px;
+  left: -40px;
+  width: 17px;
+  height: 42px;
+}
+
+.service__work {
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 350px;
+}
+
+.service--description {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.service__inner h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.service__inner ul {
+  margin-bottom: 24px;
+}
+
+.service__inner ul li {
+  margin-bottom: 8px;
+}
+
+.service__development h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.service__development p {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.service__development ul li {
+  margin-bottom: 8px;
+}
+
 .service__background {
   background-image: url(../images/SERVICE.png);
   position: absolute;
@@ -1154,123 +1239,6 @@ js-service
   z-index: 100;
 }
 
-.js--modal2 {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-.js--modal2.show_modal2 {
-  opacity: 1;
-  visibility: visible;
-  z-index: 100;
-}
-
-.js--modal3 {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-.js--modal3.show_modal3 {
-  opacity: 1;
-  visibility: visible;
-  z-index: 100;
-}
-
-.js--bg {
-  background: rgba(0, 0, 0, 0.45);
-  height: 100vh;
-  position: absolute;
-  width: 100%;
-  cursor: pointer;
-}
-
-.js--content {
-  border-radius: 8px;
-  height: 50%;
-  overflow-y: scroll;
-  left: 50%;
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 620px;
-  background-color: #ffffff;
-}
-
-.js--header {
-  display: flex;
-  position: relative;
-  margin-bottom: 32px;
-}
-
-.js--header img {
-  cursor: pointer;
-  margin-bottom: 5px;
-  position: absolute;
-  right: 0;
-}
-
-.js--box {
-  background: #1d85cd;
-  border-radius: 0px 4px 4px 0px;
-  position: absolute;
-  top: -8px;
-  left: -40px;
-  width: 17px;
-  height: 42px;
-}
-
-.js--title {
-  font-size: 24px;
-  font-weight: bold;
-  padding-right: 350px;
-}
-
-.js--description {
-  font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 24px;
-}
-
-.js--inner h2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.js--inner ul {
-  margin-bottom: 24px;
-}
-
-.js--inner ul li {
-  margin-bottom: 8px;
-}
-
-.js--development h2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.js--development p {
-  font-size: 18px;
-  line-height: 32px;
-}
-
-.js--development ul li {
-  margin-bottom: 8px;
-}
-
 /*================================================================
 タブレット対応
 ================================================================*/
@@ -1335,21 +1303,21 @@ js-service
   /*================================================================
 jsスマホ対応
 ================================================================*/
-  .js--content {
+  .service__project {
     height: 50%;
     left: 50%;
     padding: 33px 16px;
     width: 90%;
   }
-  .js--box {
+  .service__box {
     top: -10px;
     left: -20px;
   }
-  .js--title {
+  .service__work {
     font-size: 18px;
     padding: 0 0 0 16px;
   }
-  .js--description {
+  .service__description {
     font-size: 16px;
     margin-bottom: 24px;
   }
