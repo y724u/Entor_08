@@ -42,7 +42,7 @@ $(function () {
   });
 
   // <!-- ダウンロードボタン活性化&非活性化 -->
-  $('input[name="checkbox"]').on('change', function () {
+  $('.download__checkbox').on('change', function () {
     if ($(this).prop('checked'))
       $('.js--button').addClass('box__checked');
     else
