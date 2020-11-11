@@ -213,6 +213,7 @@ js-service
 @media only screen and (max-width: 767px) {
   .service {
     width: 100%;
+    overflow: hidden;
 
     &__background {
       background-size: cover;
@@ -244,6 +245,10 @@ js-service
     &__item {
       width: 85%;
       margin-right: 10px;
+
+      &:last-child {
+        padding-right: 10px;
+      }
     }
 
     &__details {

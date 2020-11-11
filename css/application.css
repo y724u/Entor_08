@@ -759,7 +759,7 @@ about
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .about__container {
-    width: 327px;
+    width: 90%;
     flex-direction: column;
     margin-top: 0;
     padding: 0;
@@ -788,18 +788,20 @@ about
   .about__description {
     font-size: 16px;
     line-height: 32px;
-    width: 327px;
+    width: 90%;
     margin: 0 auto;
-    padding-top: 58px;
+    padding-top: 28px;
   }
   .about__right {
     order: 1;
     position: relative;
     margin-top: 242px;
+    padding-bottom: 30px;
     width: 100%;
+    overflow: hidden;
   }
   .about__right img {
-    width: auto;
+    width: 320px;
     margin: 0 auto;
   }
   .about__right--pc {
@@ -931,7 +933,7 @@ company
     left: 15%;
   }
   .company__box {
-    width: 332px;
+    width: 319px;
     height: 160px;
     position: absolute;
     top: 20%;
@@ -941,7 +943,7 @@ company
   .company__container {
     margin-top: 192px;
     padding-bottom: 0;
-    width: 327px;
+    width: 90%;
     flex-direction: column;
   }
   .company__left--pc {
@@ -1269,6 +1271,7 @@ js-service
 @media only screen and (max-width: 767px) {
   .service {
     width: 100%;
+    overflow: hidden;
   }
   .service__background {
     background-size: cover;
@@ -1296,6 +1299,9 @@ js-service
   .service__item {
     width: 85%;
     margin-right: 10px;
+  }
+  .service__item:last-child {
+    padding-right: 10px;
   }
   .service__details {
     font-size: 14px;
@@ -1548,11 +1554,6 @@ js download
 スマホ対応
 ================================================================*/
 @media only screen and (max-width: 767px) {
-  .download {
-    /*================================================================
-js スマホ
-================================================================*/
-  }
   .download__wrapper {
     width: 90%;
   }
@@ -1579,7 +1580,7 @@ js スマホ
     margin-top: 153px;
   }
   .download__container {
-    width: 327px;
+    width: 90%;
     display: block;
     margin: 0 auto;
     margin-bottom: 113px;
@@ -1724,14 +1725,14 @@ footer
 @media only screen and (max-width: 767px) {
   .footer__container {
     display: block;
-    width: 300px;
+    width: 90%;
     margin: 100px 0 0 26px;
   }
   .footer__left {
     margin-bottom: 40px;
   }
   .footer__left ul li {
-    width: 300px;
+    width: 90%;
   }
   .footer__right {
     width: 250px;

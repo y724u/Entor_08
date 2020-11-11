@@ -96,8 +96,9 @@ about
 ================================================================*/
 @media only screen and (max-width: 767px) {
   .about {
+
     &__container {
-      width: 327px;
+    width: 90%;
       flex-direction: column;
       margin-top: 0;
       padding: 0;
@@ -130,20 +131,22 @@ about
     &__description {
       font-size: 16px;
       line-height: 32px;
-      width: 327px;
+      width: 90%;
       margin: 0 auto;
-      padding-top: 58px;
+      padding-top: 28px;
     }
 
     &__right {
       order: 1;
       position: relative;
       margin-top: 242px;
+      padding-bottom: 30px;
       width: 100%;
+      overflow: hidden;
 
       img {
-        width: auto;
-        margin: 0 auto;
+        width: 320px;
+        margin: 0 auto
       }
 
       &--pc {
