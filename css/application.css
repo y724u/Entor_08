@@ -1335,6 +1335,73 @@ js download
 ================================================================*/
 }
 
+.download__terms {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+}
+
+.download__wrapper {
+  height: 50%;
+  overflow-y: scroll;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  background-color: #ffffff;
+}
+
+.download__header {
+  display: flex;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.download__header img {
+  cursor: pointer;
+  padding-bottom: 5px;
+  position: absolute;
+  right: 3%;
+}
+
+.download__box {
+  background: #1d85cd;
+  border-radius: 0px 4px 4px 0px;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  width: 17px;
+  height: 42px;
+}
+
+.download__agree {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.download__inner {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.download__list h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.download__list li {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
 .download__title {
   color: #222222;
   font-size: 52px;
@@ -1459,73 +1526,6 @@ js download
   z-index: 100;
 }
 
-.download .js--download__policy {
-  background: rgba(0, 0, 0, 0.45);
-  height: 100vh;
-  position: absolute;
-  width: 100%;
-  cursor: pointer;
-}
-
-.download .js--download__content {
-  height: 50%;
-  overflow-y: scroll;
-  left: 50%;
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 620px;
-  background-color: #ffffff;
-}
-
-.download .js--download__header {
-  display: flex;
-  position: relative;
-  margin-bottom: 32px;
-}
-
-.download .js--download__header img {
-  cursor: pointer;
-  padding-bottom: 5px;
-  position: absolute;
-  right: 3%;
-}
-
-.download .js--download__box {
-  background: #1d85cd;
-  border-radius: 0px 4px 4px 0px;
-  position: absolute;
-  top: 0px;
-  left: -40px;
-  width: 17px;
-  height: 42px;
-}
-
-.download .js--download__title {
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 0px;
-}
-
-.download .js--download__description {
-  font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 24px;
-}
-
-.download .js--download__list h2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.download .js--download__list li {
-  font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 24px;
-}
-
 /*================================================================
 タブレット対応
 ================================================================*/
@@ -1552,6 +1552,19 @@ js download
     /*================================================================
 js スマホ
 ================================================================*/
+  }
+  .download__wrapper {
+    width: 90%;
+  }
+  .download__box {
+    top: -10px;
+    left: -40px;
+  }
+  .download__agree {
+    font-size: 18px;
+  }
+  .download__inner {
+    font-size: 16px;
   }
   .download__background {
     background-size: cover;
@@ -1597,19 +1610,6 @@ js スマホ
   }
   .download__button {
     margin: 0 auto;
-  }
-  .download .js--download__content {
-    width: 90%;
-  }
-  .download .js--download__box {
-    top: -10px;
-    left: -40px;
-  }
-  .download .js--download__title {
-    font-size: 18px;
-  }
-  .download .js--download__description {
-    font-size: 16px;
   }
 }
 
