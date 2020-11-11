@@ -1493,7 +1493,7 @@ js download
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .download .js--download__modal.show_modal {
