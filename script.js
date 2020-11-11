@@ -12,15 +12,14 @@ $(function () {
 
   // <!-- サービスシステム開発モーダル -->
   let scrollPosition1;
-  $('.js-modalOpen').each(function () {
-    $(this).on('click', function () {
+
+  $('.js-modalOpen').on('click',function() {
       const target = $(this).data('target');
       const modal = document.getElementById(target);
       scrollPosition1 = $(window).scrollTop();
       $(modal).addClass('show_modal');
       $('body').addClass('fixed').css({ 'top': -scrollPosition1 });
       return false;
-    });
   });
   $('.js-modalClose').on('click', function () {
     $('.js--modal').removeClass('show_modal');

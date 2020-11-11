@@ -943,6 +943,9 @@ company
     width: 90%;
     flex-direction: column;
   }
+  .company__left {
+    margin: 0 auto;
+  }
   .company__left--pc {
     display: none;
   }
