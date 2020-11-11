@@ -1,7 +1,7 @@
 
 // <!-- スムーススクロール -->
 $(function () {
-  $('a[href^="#"]').click(function () {
+  $('a[href^="#"]').on('click',function () {
     let speed = 700;
     let href = $(this).attr("href");
     let target = $(href == "#" || href == "" ? 'html' : href);
