@@ -27,6 +27,7 @@ body.fixed {
     height: 50%;
     overflow-y: scroll;
     left: 50%;
+    line-height: 32px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -66,7 +67,6 @@ body.fixed {
 
   &__description {
     font-size: 18px;
-    line-height: 32px;
     margin-bottom: 24px;
   }
 
@@ -75,14 +75,12 @@ body.fixed {
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 8px;
-      line-height: 32px;
     }
 
     ul {
       margin-bottom: 24px;
       li {
         margin-bottom: 8px;
-        line-height: 32px;
       }
     }
   }
@@ -96,13 +94,11 @@ body.fixed {
 
     p {
       font-size: 18px;
-      line-height: 32px;
     }
 
     ul {
       li {
         margin-bottom: 8px;
-        line-height: 32px;
       }
     }
   }
