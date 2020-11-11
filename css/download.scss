@@ -8,16 +8,6 @@ download
   height: auto;
   overflow: hidden;
 
-  &__background {
-    background-image: url(../images/DOWNLOAD.png);
-    position: absolute;
-    width: 1030px;
-    height: 140px;
-    top: -40%;
-    left: 10%;
-    z-index: -1;
-  }
-
   &__title {
     color: $font-black;
     font-size: $section-title-font-size;
@@ -34,6 +24,16 @@ download
     margin-bottom: 113px;
   }
 
+  &__background {
+    background-image: url(../images/DOWNLOAD.png);
+    position: absolute;
+    width: 1030px;
+    height: 140px;
+    top: -40%;
+    left: 10%;
+    z-index: -1;
+  }
+
   &__left {
     margin-right: 91px;
   }
@@ -48,7 +48,7 @@ download
     margin-bottom: 50px;
   }
 
-  input[type="checkbox"] {
+  &__checkbox {
     display: none;
     &:checked + .download__label::before {
       background: #1dbfcd
