@@ -50,14 +50,14 @@ $(function () {
   });
 
   // <!-- ハンバーガーメニュー -->
-  $('.js--hamburger').on('click', function () {
+  $('.top__hamburger').on('click', function () {
     $('.js-open').toggleClass('active')
   });
 
   // <!-- ハンバーガーメニュースクールロールストップ -->
   let state = false;
   let scrollpos;
-  $('.js--hamburger').on('click', function () {
+  $('.top__hamburger').on('click', function () {
     if (state == false) {
       scrollpos = $(window).scrollTop();
       $('body').addClass('fixed').css({ 'top': -scrollpos });

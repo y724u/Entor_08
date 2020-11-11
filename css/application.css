@@ -539,10 +539,7 @@ top
   font-weight: bold;
 }
 
-/*================================================================
-js-top
-================================================================*/
-.js--hamburger {
+.top__hamburger {
   display: none;
   height: 80px;
   width: 80px;
@@ -553,7 +550,7 @@ js-top
   z-index: 300;
 }
 
-.js--hamburger span {
+.top__hamburger span {
   height: 1px;
   width: 24px;
   background: #ffffff;
@@ -564,25 +561,25 @@ js-top
   transition: 1s;
 }
 
-.js--hamburger .js--line_1 {
+.top__hamburger .top__line_1 {
   transform: translate(-50%, -8px);
 }
 
-.js--hamburger .js--line_3 {
+.top__hamburger .top__line_3 {
   transform: translate(-50%, 8px);
 }
 
-.js--hamburger.active .js--line_1 {
+.top__hamburger.active .top__line_1 {
   transform: rotate(45deg) translate(-50%, 0);
   transform-origin: 0% 50%;
   background: #222222;
 }
 
-.js--hamburger.active .js--line_2 {
+.top__hamburger.active .top__line_2 {
   opacity: 0;
 }
 
-.js--hamburger.active .js--line_3 {
+.top__hamburger.active .top__line_3 {
   transform: rotate(-45deg) translate(-50%, 0);
   transform-origin: 0% 50%;
   background: #222222;
@@ -662,7 +659,7 @@ js-top
   .top__subtitle {
     font-size: 16px;
   }
-  .js--hamburger {
+  .top__hamburger {
     display: block;
     right: 0;
   }

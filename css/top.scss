@@ -62,52 +62,50 @@ top
     font-size: 32px;
     font-weight: bold;
   }
-}
-/*================================================================
-js-top
-================================================================*/
-.js--hamburger {
-  display: none;
-  height: 80px;
-  width: 80px;
-  position: fixed;
-  top: 0;
-  right: 15px;
-  cursor: pointer;
-  z-index: 300;
 
-  span {
-    height: 1px;
-    width: 24px;
-    background: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 1s;
-  }
-  .js--line_1 {
-    transform: translate(-50%, -8px);
-  }
+  &__hamburger {
+    display: none;
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    right: 15px;
+    cursor: pointer;
+    z-index: 300;
 
-  .js--line_3 {
-    transform: translate(-50%, 8px);
-  }
+    span {
+      height: 1px;
+      width: 24px;
+      background: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 1s;
+    }
+    .top__line_1 {
+      transform: translate(-50%, -8px);
+    }
 
-  &.active .js--line_1 {
-    transform: rotate(45deg) translate(-50%, 0);
-    transform-origin: 0% 50%;
-    background: #222222;
-  }
+    .top__line_3 {
+      transform: translate(-50%, 8px);
+    }
 
-  &.active .js--line_2 {
-    opacity: 0;
-  }
+    &.active .top__line_1 {
+      transform: rotate(45deg) translate(-50%, 0);
+      transform-origin: 0% 50%;
+      background: #222222;
+    }
 
-  &.active .js--line_3 {
-    transform: rotate(-45deg) translate(-50%, 0);
-    transform-origin: 0% 50%;
-    background: #222222;
+    &.active .top__line_2 {
+      opacity: 0;
+    }
+
+    &.active .top__line_3 {
+      transform: rotate(-45deg) translate(-50%, 0);
+      transform-origin: 0% 50%;
+      background: #222222;
+    }
   }
 }
 /*================================================================
@@ -199,10 +197,10 @@ js-top
     &__subtitle {
       font-size: 16px;
     }
-  }
 
-  .js--hamburger {
-    display: block;
-    right: 0;
+    &__hamburger {
+      display: block;
+      right: 0;
+    }
   }
 }
