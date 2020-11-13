@@ -539,7 +539,7 @@ top
   font-weight: bold;
 }
 
-.js__hamburger {
+.js-hamburger {
   display: none;
   height: 80px;
   width: 80px;
@@ -550,7 +550,7 @@ top
   z-index: 300;
 }
 
-.js__hamburger span {
+.js-hamburger span {
   height: 1px;
   width: 24px;
   background: #ffffff;
@@ -561,25 +561,25 @@ top
   transition: 1s;
 }
 
-.js__hamburger .top__line_1 {
+.js-hamburger .top__line_1 {
   transform: translate(-50%, -8px);
 }
 
-.js__hamburger .top__line_3 {
+.js-hamburger .top__line_3 {
   transform: translate(-50%, 8px);
 }
 
-.js__hamburger.active .top__line_1 {
+.js-hamburger.active .top__line_1 {
   transform: rotate(45deg) translate(-50%, 0);
   transform-origin: 0% 50%;
   background: #222222;
 }
 
-.js__hamburger.active .top__line_2 {
+.js-hamburger.active .top__line_2 {
   opacity: 0;
 }
 
-.js__hamburger.active .top__line_3 {
+.js-hamburger.active .top__line_3 {
   transform: rotate(-45deg) translate(-50%, 0);
   transform-origin: 0% 50%;
   background: #222222;
@@ -659,7 +659,7 @@ top
   .top__subtitle {
     font-size: 16px;
   }
-  .js__hamburger {
+  .js-hamburger {
     display: block;
     right: 0;
   }

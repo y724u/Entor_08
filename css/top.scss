@@ -64,7 +64,7 @@ top
   }
 }
 .js {
-  &__hamburger {
+  &-hamburger {
     display: none;
     height: 80px;
     width: 80px;
@@ -199,12 +199,10 @@ top
     &__subtitle {
       font-size: 16px;
     }
-
- 
   }
 
   .js {
-    &__hamburger {
+    &-hamburger {
       display: block;
       right: 0;
     }
