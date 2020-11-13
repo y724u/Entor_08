@@ -1441,14 +1441,6 @@ js download
   margin-bottom: 50px;
 }
 
-.download__checkbox {
-  display: none;
-}
-
-.download__checkbox:checked + .download__label::before {
-  background: #1dbfcd url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.74999%208.14995L1.59999%204.99995L0.549988%206.04995L4.74999%2010.25L13.75%201.24995L12.7%200.199951L4.74999%208.14995Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E") no-repeat 5px center;
-}
-
 .download__label {
   cursor: pointer;
   display: inline-block;
@@ -1488,7 +1480,15 @@ js download
   margin-top: 39px;
 }
 
-.download .js--button {
+.download .js-checkbox {
+  display: none;
+}
+
+.download .js-checkbox:checked + .download__label::before {
+  background: #1dbfcd url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.74999%208.14995L1.59999%204.99995L0.549988%206.04995L4.74999%2010.25L13.75%201.24995L12.7%200.199951L4.74999%208.14995Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E") no-repeat 5px center;
+}
+
+.download .js-button {
   background-color: #1d85cd;
   border-radius: 4px;
   opacity: 0.5;
@@ -1504,12 +1504,12 @@ js download
   background-position: 45px 13px;
 }
 
-.download .js--button.box__checked {
+.download .js-button.box__checked {
   pointer-events: auto;
   opacity: 1;
 }
 
-.download .js--download__modal {
+.download .js-download__modal {
   height: 100vh;
   position: fixed;
   top: 0;
@@ -1519,7 +1519,7 @@ js download
   transition: 0.8s;
 }
 
-.download .js--download__modal.show_modal {
+.download .js-download__modal.show_modal {
   opacity: 1;
   visibility: visible;
   z-index: 100;

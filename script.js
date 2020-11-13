@@ -29,22 +29,22 @@ $(function () {
   // <!-- 利用規約モーダル -->
   let scrollPosition;
   $('.js-modalOpen-download').on('click', function () {
-    $('.js--download__modal').addClass('show_modal');
+    $('.js-download__modal').addClass('show_modal');
     scrollPosition = $(window).scrollTop();
     $('body').addClass('fixed').css({ 'top': -scrollPosition });
   });
   $('.js-modalClose-download').on('click', function () {
-    $('.js--download__modal').removeClass('show_modal');
+    $('.js-download__modal').removeClass('show_modal');
     $('body').removeClass('fixed').css({ 'top': 0 });
     window.scrollTo(0, scrollPosition);
   });
 
   // <!-- ダウンロードボタン活性化&非活性化 -->
-  $('.download__checkbox').on('change', function () {
+  $('.js-checkbox').on('change', function () {
     if ($(this).prop('checked'))
-      $('.js--button').addClass('box__checked');
+      $('.js-button').addClass('box__checked');
     else
-      $('.js--button').removeClass('box__checked');
+      $('.js-button').removeClass('box__checked');
   });
 
   // <!-- ハンバーガーメニュー -->
