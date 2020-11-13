@@ -840,8 +840,9 @@ company
 
 .company__background {
   background-image: url(../images/COMPANY.png);
+  background-repeat: no-repeat;
   position: absolute;
-  width: 720px;
+  width: 100%;
   height: 140px;
   top: -2%;
   left: 50%;
@@ -1343,6 +1344,7 @@ js download
 }
 
 .download__wrapper {
+  border-radius: 8px;
   height: 50%;
   overflow-y: scroll;
   left: 50%;
