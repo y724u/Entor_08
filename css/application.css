@@ -1226,13 +1226,13 @@ js-service
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
+  z-index: 100;
 }
 
 .js--modal.show_modal {
   opacity: 1;
   visibility: visible;
-  z-index: 100;
 }
 
 /*================================================================
